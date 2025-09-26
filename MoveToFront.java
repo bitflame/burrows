@@ -34,7 +34,7 @@ public class MoveToFront {
             if (isActive[currentChar]) {
                 // find characters current index and then move the character to the front
                 BinaryStdOut.write(activeStringIndex(count, currentChar));
-
+                updateActiveStringIndex(count, currentChar);
             }
             else {
                 // since ascii value of the character is the default index of it...
