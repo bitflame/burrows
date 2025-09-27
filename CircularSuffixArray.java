@@ -4,6 +4,9 @@
  *  Description:
  **************************************************************************** */
 
+import java.util.Arrays;
+import java.util.Comparator;
+
 public class CircularSuffixArray {
     char[][] suffixes;
     int N;
@@ -13,14 +16,36 @@ public class CircularSuffixArray {
         N = s.length();
         suffixes = new char[N][N];
         char[] chars = s.toCharArray();
-        for (int i = 0; i < N; i++) {
+        int index = 0;
+        suffixes[0] = new char[N];
+        for (char c : chars) {
+            suffixes[0][index++] = c;
+        }
+        for (int i = 1; i < N; i++) {
             suffixes[i] = new char[N];
-            int index = 0;
+            index = 0;
             for (char c : shiftArry(chars, 1)) {
                 suffixes[i][index] = c;
                 index++;
             }
         }
+        System.out.println("Before Sorting: ");
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < N; j++) {
+                System.out.printf("%c ", suffixes[i][j]);
+            }
+            System.out.println();
+        }
+        System.out.println("After Sorting:");
+        Arrays.sort(suffixes, new Comparator<char[]>() {
+            public int compare(char[] o1, char[] o2) {
+                for (int i = 0; i < N; i++) {
+                    if (o1[i] > o2[i]) return 1;
+                    if (o2[i] > o1[i]) return -1;
+                }
+                return 0;
+            }
+        });
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < N; j++) {
                 System.out.printf("%c ", suffixes[i][j]);
