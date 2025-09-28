@@ -33,14 +33,14 @@ public class CircularSuffixArray {
                 index++;
             }
         }
-        System.out.println("Before Sorting: ");
-        for (int i = 0; i < N; i++) {
-            for (int j = 1; j < N + 1; j++) {
-                System.out.printf("%c ", suffixes[i][j]);
-            }
-            System.out.println();
-        }
-        System.out.println("After Sorting:");
+        // System.out.println("Before Sorting: ");
+        // for (int i = 0; i < N; i++) {
+        //     for (int j = 1; j < N + 1; j++) {
+        //         System.out.printf("%c ", suffixes[i][j]);
+        //     }
+        //     System.out.println();
+        // }
+        // System.out.println("After Sorting:");
         Arrays.sort(suffixes, new Comparator<char[]>() {
             public int compare(char[] o1, char[] o2) {
                 for (int i = 1; i <= N; i++) {
@@ -50,12 +50,12 @@ public class CircularSuffixArray {
                 return 0;
             }
         });
-        for (int i = 0; i < N; i++) {
-            for (int j = 1; j <= N; j++) {
-                System.out.printf("%c ", suffixes[i][j]);
-            }
-            System.out.println();
-        }
+        // for (int i = 0; i < N; i++) {
+        //     for (int j = 1; j <= N; j++) {
+        //         System.out.printf("%c ", suffixes[i][j]);
+        //     }
+        //     System.out.println();
+        // }
     }
 
     private char[] shiftArry(char[] chars) {

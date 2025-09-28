@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="Saving the latest. Circular suffix seems to be working.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="Saving the latest.">
       <change beforePath="$PROJECT_DIR$/CircularSuffixArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/CircularSuffixArray.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -104,7 +103,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.CircularSuffixArray.executor": "Debug",
+    "Application.CircularSuffixArray.executor": "Run",
     "Application.MoveToFront.executor": "Run",
     "Attach to process.localhost:5005.executor": "ProcessAttachDebug",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
@@ -210,7 +209,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759075186691</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Saving the latest.">
+      <option name="closed" value="true" />
+      <created>1759075900557</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1759075900557</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView">
@@ -263,7 +270,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Saving the latest" />
     <MESSAGE value="Saving the latest. Circular suffix seems to be working." />
-    <option name="LAST_COMMIT_MESSAGE" value="Saving the latest. Circular suffix seems to be working." />
+    <MESSAGE value="Saving the latest." />
+    <option name="LAST_COMMIT_MESSAGE" value="Saving the latest." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -273,20 +281,15 @@
           <line>31</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/CircularSuffixArray.java</url>
           <line>28</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/CircularSuffixArray.java</url>
           <line>20</line>
           <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/CircularSuffixArray.java</url>
-          <line>58</line>
-          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
