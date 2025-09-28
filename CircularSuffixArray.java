@@ -70,18 +70,21 @@ public class CircularSuffixArray {
 
     // length of s
     public int length() {
-        return N; // for now
+        return N;
     }
 
     // returns index of ith sorted suffix
     public int index(int i) {
-        return -1;
+        return suffixes[i][0];
     }
 
     // unit testing (required)
     public static void main(String[] args) {
         CircularSuffixArray circularSuffixArray = new CircularSuffixArray("ABRACADABRA!");
-
+        for (int i = 0; i < 12; i++) {
+            System.out.printf("Current index: %d Original index: %d\n", i,
+                              circularSuffixArray.index(i));
+        }
     }
 
 }
