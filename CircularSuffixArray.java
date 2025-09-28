@@ -10,37 +10,41 @@ import java.util.Comparator;
 public class CircularSuffixArray {
     char[][] suffixes;
     int N;
-    int[] indices;
+    int first;
+    int[] index;
+    int[] next;
 
     // circular suffix array of s
     public CircularSuffixArray(String s) {
-        indices = new int[N];
+        if (s == null) throw new IllegalArgumentException("String object is null.");
+        index = new int[N];
+        next = new int[N];
         N = s.length();
         suffixes = new char[N][N + 1];
         char[] chars = s.toCharArray();
-        int index = 1, arrayIndex = 0;
+        int colIndex = 1, shiftedStringId = 0;
         suffixes[0][0] = 0;
         for (char c : chars) {
-            suffixes[0][index++] = c;
+            suffixes[0][colIndex++] = c;
         }
-        arrayIndex = 1;
+        shiftedStringId = 1;
         for (int i = 1; i < N; i++) {
-            index = 1;
-            suffixes[i][0] = (char) arrayIndex;
-            arrayIndex++;
+            colIndex = 1;
+            suffixes[i][0] = (char) shiftedStringId;
+            shiftedStringId++;
             for (char c : shiftArry(chars)) {
-                suffixes[i][index] = c;
-                index++;
+                suffixes[i][colIndex] = c;
+                colIndex++;
             }
         }
-        // System.out.println("Before Sorting: ");
-        // for (int i = 0; i < N; i++) {
-        //     for (int j = 1; j < N + 1; j++) {
-        //         System.out.printf("%c ", suffixes[i][j]);
-        //     }
-        //     System.out.println();
-        // }
-        // System.out.println("After Sorting:");
+        System.out.println("Before Sorting: ");
+        for (int i = 0; i < N; i++) {
+            for (int j = 1; j < N + 1; j++) {
+                System.out.printf("%c ", suffixes[i][j]);
+            }
+            System.out.println();
+        }
+        System.out.println("After Sorting:");
         Arrays.sort(suffixes, new Comparator<char[]>() {
             public int compare(char[] o1, char[] o2) {
                 for (int i = 1; i <= N; i++) {
@@ -50,12 +54,24 @@ public class CircularSuffixArray {
                 return 0;
             }
         });
-        // for (int i = 0; i < N; i++) {
-        //     for (int j = 1; j <= N; j++) {
-        //         System.out.printf("%c ", suffixes[i][j]);
-        //     }
-        //     System.out.println();
-        // }
+        for (int i = 0; i < N; i++) {
+            for (int j = 1; j <= N; j++) {
+                System.out.printf("%c ", suffixes[i][j]);
+            }
+            System.out.println();
+        }
+        int indexCouter = 0, nextCounter = 0, rowCounter = 0;
+        while (indexCouter < N || nextCounter < N) {
+            if (indexCouter == suffixes[rowCounter][0]) {
+                index[rowCounter] = rowCounter;
+                indexCouter++;
+            }
+            if (nextCounter == suffixes[rowCounter][0]) {
+                next[nextCounter] = rowCounter;
+                nextCounter++;
+            }
+            rowCounter++;
+        }
     }
 
     private char[] shiftArry(char[] chars) {
@@ -75,6 +91,7 @@ public class CircularSuffixArray {
 
     // returns index of ith sorted suffix
     public int index(int i) {
+        if (i < 0 || i > N) throw new IllegalArgumentException("Invalid index number request.");
         return suffixes[i][0];
     }
 
