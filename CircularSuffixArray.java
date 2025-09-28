@@ -17,9 +17,9 @@ public class CircularSuffixArray {
     // circular suffix array of s
     public CircularSuffixArray(String s) {
         if (s == null) throw new IllegalArgumentException("String object is null.");
+        N = s.length();
         index = new int[N];
         next = new int[N];
-        N = s.length();
         suffixes = new char[N][N + 1];
         char[] chars = s.toCharArray();
         int colIndex = 1, shiftedStringId = 0;
@@ -44,6 +44,16 @@ public class CircularSuffixArray {
             }
             System.out.println();
         }
+        int tempValue, loopCounter = 0;
+        for (int i = 0; i < N; i++) {
+            index[i] = suffixes[i][0];
+            tempValue = suffixes[i][0];
+            loopCounter = 0;
+            while (loopCounter < N) {
+                if (suffixes[loopCounter][0] == (tempValue + 1) % N) next[i] = loopCounter;
+                loopCounter++;
+            }
+        }
         System.out.println("After Sorting:");
         Arrays.sort(suffixes, new Comparator<char[]>() {
             public int compare(char[] o1, char[] o2) {
@@ -60,18 +70,7 @@ public class CircularSuffixArray {
             }
             System.out.println();
         }
-        int indexCouter = 0, nextCounter = 0, rowCounter = 0;
-        while (indexCouter < N || nextCounter < N) {
-            if (indexCouter == suffixes[rowCounter][0]) {
-                index[rowCounter] = rowCounter;
-                indexCouter++;
-            }
-            if (nextCounter == suffixes[rowCounter][0]) {
-                next[nextCounter] = rowCounter;
-                nextCounter++;
-            }
-            rowCounter++;
-        }
+
     }
 
     private char[] shiftArry(char[] chars) {
