@@ -4,6 +4,8 @@
  *  Description:
  **************************************************************************** */
 
+import edu.princeton.cs.algs4.ST;
+
 import java.util.Arrays;
 import java.util.Comparator;
 
@@ -13,6 +15,7 @@ public class CircularSuffixArray {
     int first;
     int[] index;
     int[] next;
+    int[][] indices;
 
     // circular suffix array of s
     public CircularSuffixArray(String s) {
@@ -44,16 +47,7 @@ public class CircularSuffixArray {
             }
             System.out.println();
         }
-        int tempValue, loopCounter = 0;
-        for (int i = 0; i < N; i++) {
-            index[i] = suffixes[i][0];
-            tempValue = suffixes[i][0];
-            loopCounter = 0;
-            while (loopCounter < N) {
-                if (suffixes[loopCounter][0] == (tempValue + 1) % N) next[i] = loopCounter;
-                loopCounter++;
-            }
-        }
+
         System.out.println("After Sorting:");
         Arrays.sort(suffixes, new Comparator<char[]>() {
             public int compare(char[] o1, char[] o2) {
@@ -64,6 +58,11 @@ public class CircularSuffixArray {
                 return 0;
             }
         });
+        // i is the sortedIndex, and the Symbol table can give me the original index of the string
+        ST<Character, Integer> originalIndex = new ST<>();
+        for (int i = 0; i < N; i++) {
+            originalIndex.put(suffixes[i][0], i);
+        }
         for (int i = 0; i < N; i++) {
             for (int j = 1; j <= N; j++) {
                 System.out.printf("%c ", suffixes[i][j]);
