@@ -104,7 +104,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.CircularSuffixArray.executor": "Debug",
+    "Application.CircularSuffixArray.executor": "Run",
     "Application.MoveToFront.executor": "Run",
     "Attach to process.localhost:5005.executor": "ProcessAttachDebug",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
@@ -202,15 +202,7 @@
       <option name="project" value="LOCAL" />
       <updated>1759003730468</updated>
     </task>
-    <task id="LOCAL-00008" summary="Saving the latest">
-      <option name="closed" value="true" />
-      <created>1759005065216</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1759005065216</updated>
-    </task>
-    <option name="localTasksCounter" value="9" />
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView">
@@ -274,8 +266,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/CircularSuffixArray.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="5" />
+          <line>28</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/CircularSuffixArray.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
