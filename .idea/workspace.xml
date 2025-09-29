@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="Saving what I have before making drastic changes based on new insight.">
+    <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="Saving the latest changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MoveToFront.class" beforeDir="false" afterPath="$PROJECT_DIR$/MoveToFront.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MoveToFront.java" beforeDir="false" afterPath="$PROJECT_DIR$/MoveToFront.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -110,7 +111,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.CircularSuffixArray.executor": "Debug",
-    "Application.MoveToFront.executor": "Run",
+    "Application.MoveToFront.executor": "Debug",
     "Attach to process.localhost:5005.executor": "ProcessAttachDebug",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -263,7 +264,23 @@
       <option name="project" value="LOCAL" />
       <updated>1759181148847</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Saving what I have before making drastic changes based on new insight.">
+      <option name="closed" value="true" />
+      <created>1759181469996</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1759181469996</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Saving the latest changes">
+      <option name="closed" value="true" />
+      <created>1759181760674</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1759181760674</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TodoView">
@@ -319,7 +336,8 @@
     <MESSAGE value="Saving the latest." />
     <MESSAGE value="Need to make sure index[], next[], and t[] populate with the right values." />
     <MESSAGE value="Saving what I have before making drastic changes based on new insight." />
-    <option name="LAST_COMMIT_MESSAGE" value="Saving what I have before making drastic changes based on new insight." />
+    <MESSAGE value="Saving the latest changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Saving the latest changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

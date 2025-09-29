@@ -63,17 +63,20 @@ public class MoveToFront {
     }
 
     private static void updateActiveStringIndex(int uniqueCharCount, char currentChar) {
-        int index;
-        for (int i = uniqueCharCount; i > 0; i--) {
-            if (defaultList[i - 1] == currentChar) {
-                index = i - 1;
-                while (index <= uniqueCharCount) {
-                    defaultList[index] = defaultList[++index];
-                }
-                i--;
-            }
-            defaultList[i] = defaultList[i - 1];
+        // int index;
+        for (char c = currentChar; c > 0; c--) {
+            defaultList[c] = defaultList[c - 1];
         }
+        // for (int i = uniqueCharCount; i > 0; i--) {
+        //     if (defaultList[i - 1] == currentChar) {
+        //         index = i - 1;
+        //         while (index <= uniqueCharCount) {
+        //             defaultList[index] = defaultList[++index];
+        //         }
+        //         i--;
+        //     }
+        //     defaultList[i] = defaultList[i - 1];
+        // }
         defaultList[0] = currentChar;
     }
 
