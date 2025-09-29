@@ -35,7 +35,8 @@ public class MoveToFront {
             char currentChar = BinaryStdIn.readChar();
             if (isActive[currentChar]) {
                 // find characters current index and then move the character to the front
-                BinaryStdOut.write(activeStringIndex(count, currentChar), relevantBits);
+                // BinaryStdOut.write(activeStringIndex(count, currentChar), relevantBits);
+                BinaryStdOut.write(activeStringIndex(count, currentChar));
                 updateActiveStringIndex(uniqueCharCount, currentChar);
             }
             else {
@@ -51,7 +52,6 @@ public class MoveToFront {
         // System.out.println("Here is what is in the array after the string is entered.");
         // printString();
         // for (int i = 0; i < count; i++) BinaryStdOut.write(defaultList[i]);
-
         BinaryStdOut.close();
     }
 

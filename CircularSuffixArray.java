@@ -58,6 +58,18 @@ public class CircularSuffixArray {
                 return 0;
             }
         });
+        for (int i = 0; i < N; i++) {
+            index[i] = -1;
+            next[i] = -1;
+        }
+        int suffixIndex = 0, rowIndex = 0;
+        while (suffixIndex < N) {
+            if (suffixIndex == suffixes[rowIndex][0] && index[rowIndex] != -1) {
+                index[rowIndex] = suffixIndex;
+                suffixIndex++;
+            }
+        }
+
         // i is the sortedIndex, and the Symbol table can give me the original index of the string
         ST<Character, Integer> originalIndex = new ST<>();
         for (int i = 0; i < N; i++) {
