@@ -36,13 +36,13 @@ public class MoveToFront {
             if (isActive[currentChar]) {
                 // find characters current index and then move the character to the front
                 // BinaryStdOut.write(activeStringIndex(count, currentChar), relevantBits);
-                BinaryStdOut.write(defaultList[currentChar]);
+                BinaryStdOut.write(activeStringIndex(uniqueCharCount, currentChar));
                 updateActiveStringIndex(uniqueCharCount, currentChar);
             }
             else {
                 // since ascii value of the character is the default index of it...
                 uniqueCharCount++;
-                BinaryStdOut.write(currentChar);
+                BinaryStdOut.write(defaultList[currentChar]);
                 isActive[currentChar] = true;
                 updateActiveStringIndex(uniqueCharCount, currentChar);
                 // Just in case the exact string is needed later
@@ -57,7 +57,7 @@ public class MoveToFront {
 
     private static int activeStringIndex(int uniqueCharCount, char currentChar) {
         for (int i = 0; i < uniqueCharCount; i++) {
-            if (activeString[i] == currentChar) return i;
+            if (defaultList[i] == currentChar) return i;
         }
         return -1;
     }
