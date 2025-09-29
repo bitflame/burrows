@@ -64,8 +64,9 @@ public class MoveToFront {
 
     private static void updateActiveStringIndex(int uniqueCharCount, char currentChar) {
         // int index;
-        for (char c = currentChar; c > 0; c--) {
-            defaultList[c] = defaultList[c - 1];
+
+        for (int i = 1; i < 256; i++) {
+            defaultList[i] = defaultList[i - 1];
         }
         // for (int i = uniqueCharCount; i > 0; i--) {
         //     if (defaultList[i - 1] == currentChar) {
