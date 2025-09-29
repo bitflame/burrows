@@ -43,8 +43,8 @@ public class MoveToFront {
                 // since ascii value of the character is the default index of it...
                 uniqueCharCount++;
                 BinaryStdOut.write(defaultList[currentChar]);
-                isActive[currentChar] = true;
                 updateActiveStringIndex(uniqueCharCount, currentChar);
+                isActive[currentChar] = true;
                 // Just in case the exact string is needed later
                 stringChars.add(currentChar);
             }
@@ -65,7 +65,14 @@ public class MoveToFront {
     private static void updateActiveStringIndex(int uniqueCharCount, char currentChar) {
         int index;
         if (isActive[currentChar]) {
-            for (int i = uniqueCharCount; i > 0; i--) {
+            for (int i = uniqueCharCount - 1; i > 0; i--) {
+                if (defaultList[i - 1] == currentChar) {
+                    index = i - 1;
+                    while (index <= uniqueCharCount) {
+                        defaultList[index] = defaultList[++index];
+                    }
+                    i--;
+                }
                 defaultList[i] = defaultList[i - 1];
             }
         }
