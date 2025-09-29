@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="Need to make sure index[], next[], and t[] populate with the right values.">
+    <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="Saving what I have before making drastic changes based on new insight.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CircularSuffixArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/CircularSuffixArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoveToFront.class" beforeDir="false" afterPath="$PROJECT_DIR$/MoveToFront.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MoveToFront.java" beforeDir="false" afterPath="$PROJECT_DIR$/MoveToFront.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +40,11 @@
     <option name="myRunOnSave" value="true" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
     <option name="UPDATE_TYPE" value="REBASE" />
@@ -113,7 +116,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "Test",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/firoozyasin/IdeaProjects/burrows"
   }
@@ -252,7 +255,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759101437197</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Saving what I have before making drastic changes based on new insight.">
+      <option name="closed" value="true" />
+      <created>1759181148847</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1759181148847</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView">
@@ -307,7 +318,8 @@
     <MESSAGE value="Saving the latest. Circular suffix seems to be working." />
     <MESSAGE value="Saving the latest." />
     <MESSAGE value="Need to make sure index[], next[], and t[] populate with the right values." />
-    <option name="LAST_COMMIT_MESSAGE" value="Need to make sure index[], next[], and t[] populate with the right values." />
+    <MESSAGE value="Saving what I have before making drastic changes based on new insight." />
+    <option name="LAST_COMMIT_MESSAGE" value="Saving what I have before making drastic changes based on new insight." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
