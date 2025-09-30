@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="Saving the latest changes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoveToFront.class" beforeDir="false" afterPath="$PROJECT_DIR$/MoveToFront.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoveToFront.java" beforeDir="false" afterPath="$PROJECT_DIR$/MoveToFront.java" afterDir="false" />
-    </list>
+    <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="Saving the latest changes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -111,7 +107,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.CircularSuffixArray.executor": "Debug",
-    "Application.MoveToFront.executor": "Run",
+    "Application.MoveToFront.executor": "Debug",
     "Attach to process.localhost:5005.executor": "ProcessAttachDebug",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -137,6 +133,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.CircularSuffixArray" />
+      <item itemvalue="Application.MoveToFront" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.MoveToFront" />

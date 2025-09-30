@@ -10,39 +10,19 @@ import edu.princeton.cs.algs4.BinaryStdOut;
 public class MoveToFront {
     private static final int R = 256;
     private static char[] defaultList;
-    private static boolean[] isActive;
     static int relevantBits = 8;
 
     // apply move-to-front encoding, reading from standard input and writing to standard output
     public static void encode() {
         defaultList = new char[R];
-        isActive = new boolean[256];
         for (int i = 0; i < R; i++) {
             defaultList[i] = (char) i;
         }
-        // System.out.println("Encoding. Here is what is in the array before endoding.");
-        // printString();
-        int count = 0, uniqueCharCount = 0;
         while (!BinaryStdIn.isEmpty()) {
-            count++;
             char currentChar = BinaryStdIn.readChar();
-            if (isActive[currentChar]) {
-                // find characters current index and then move the character to the front
-                // BinaryStdOut.write(activeStringIndex(count, currentChar), relevantBits);
-                BinaryStdOut.write(activeStringIndex(currentChar), relevantBits);
-                updateActiveStringIndex(currentChar);
-            }
-            else {
-                // since ascii value of the character is the default index of it...
-                uniqueCharCount++;
-                BinaryStdOut.write(activeStringIndex(currentChar), relevantBits);
-                updateActiveStringIndex(currentChar);
-                isActive[currentChar] = true;
-            }
+            BinaryStdOut.write(activeStringIndex(currentChar), relevantBits);
+            updateActiveStringIndex(currentChar);
         }
-        // System.out.println("Here is what is in the array after the string is entered.");
-        // printString();
-        // for (int i = 0; i < count; i++) BinaryStdOut.write(defaultList[i]);
         BinaryStdOut.close();
     }
 
@@ -70,7 +50,6 @@ public class MoveToFront {
     // apply move-to-front decoding, reading from standard input and writing to standard output
     public static void decode() {
         System.out.println("Decoding.");
-
     }
 
     // if args[0] is "-", apply move-to-front encoding
