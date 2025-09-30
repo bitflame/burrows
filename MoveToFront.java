@@ -7,22 +7,15 @@
 import edu.princeton.cs.algs4.BinaryStdIn;
 import edu.princeton.cs.algs4.BinaryStdOut;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class MoveToFront {
     private static final int R = 256;
     private static char[] defaultList;
-    private static char[] activeString;
     private static boolean[] isActive;
-    private static List<Character> stringChars;
     static int relevantBits = 8;
 
     // apply move-to-front encoding, reading from standard input and writing to standard output
     public static void encode() {
         defaultList = new char[R];
-        activeString = new char[R];
-        stringChars = new ArrayList<>();
         isActive = new boolean[256];
         for (int i = 0; i < R; i++) {
             defaultList[i] = (char) i;
@@ -36,17 +29,15 @@ public class MoveToFront {
             if (isActive[currentChar]) {
                 // find characters current index and then move the character to the front
                 // BinaryStdOut.write(activeStringIndex(count, currentChar), relevantBits);
-                BinaryStdOut.write(activeStringIndex(uniqueCharCount, currentChar), relevantBits);
-                updateActiveStringIndex(uniqueCharCount, currentChar);
+                BinaryStdOut.write(activeStringIndex(currentChar), relevantBits);
+                updateActiveStringIndex(currentChar);
             }
             else {
                 // since ascii value of the character is the default index of it...
                 uniqueCharCount++;
-                BinaryStdOut.write(defaultList[currentChar]);
-                updateActiveStringIndex(uniqueCharCount, currentChar);
+                BinaryStdOut.write(activeStringIndex(currentChar), relevantBits);
+                updateActiveStringIndex(currentChar);
                 isActive[currentChar] = true;
-                // Just in case the exact string is needed later
-                stringChars.add(currentChar);
             }
         }
         // System.out.println("Here is what is in the array after the string is entered.");
@@ -55,37 +46,24 @@ public class MoveToFront {
         BinaryStdOut.close();
     }
 
-    private static int activeStringIndex(int uniqueCharCount, char currentChar) {
-        for (int i = 0; i < uniqueCharCount; i++) {
+    private static int activeStringIndex(char currentChar) {
+        for (int i = 0; i < R; i++) {
             if (defaultList[i] == currentChar) return i;
         }
         return -1;
     }
 
-    private static void updateActiveStringIndex(int uniqueCharCount, char currentChar) {
-        int index;
-        if (isActive[currentChar]) {
-            for (int i = uniqueCharCount; i > 0; i--) {
-                if (defaultList[i - 1] == currentChar) {
-                    defaultList[i] = defaultList[i - 1];
-                }
-            }
-        }
-        else {
-            for (int i = currentChar; i > 0; i--) {
-                defaultList[i] = defaultList[i - 1];
-            }
-        }
-        // for (int i = uniqueCharCount; i > 0; i--) {
-        //     if (defaultList[i - 1] == currentChar) {
-        //         index = i - 1;
-        //         while (index <= uniqueCharCount) {
-        //             defaultList[index] = defaultList[++index];
-        //         }
-        //         i--;
-        //     }
-        //     defaultList[i] = defaultList[i - 1];
-        // }
+    private static void shift(int i, int j) {
+        defaultList[j] = defaultList[i];
+    }
+
+    private static void updateActiveStringIndex(char currentChar) {
+        // find the current index of the character, and move the down stream character to the current location
+        int index = activeStringIndex(currentChar);
+        do {
+            shift(index - 1, index);
+            index--;
+        } while (index > 0);
         defaultList[0] = currentChar;
     }
 
