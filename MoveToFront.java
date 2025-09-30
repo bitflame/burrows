@@ -39,11 +39,13 @@ public class MoveToFront {
 
     private static void updateActiveStringIndex(char currentChar) {
         // find the current index of the character, and move the down stream character to the current location
-        int index = activeStringIndex(currentChar);
-        do {
-            shift(index - 1, index);
-            index--;
-        } while (index > 0);
+        if (currentChar > 0) {
+            int index = activeStringIndex(currentChar);
+            do {
+                shift(index - 1, index);
+                index--;
+            } while (index > 0);
+        }
         defaultList[0] = currentChar;
     }
 
@@ -62,13 +64,8 @@ public class MoveToFront {
         BinaryStdOut.close();
     }
 
-    // if args[0] is "-", apply move-to-front encoding
-    // if args[0] is "+", apply move-to-front decoding
     public static void main(String[] args) {
         if (args[0].equals("-")) encode();
         if (args[0].equals("+")) decode();
-
-
-        // encode();
     }
 }
