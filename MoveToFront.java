@@ -54,9 +54,12 @@ public class MoveToFront {
         for (int i = 0; i < R; i++) {
             defaultList[i] = (char) i;
         }
-        BinaryStdOut.flush();
-        int val = BinaryStdIn.readChar();
-        System.out.println(val);
+        while (!BinaryStdIn.isEmpty()) {
+            int val = BinaryStdIn.readChar();
+            BinaryStdOut.write(defaultList[val]);
+            updateActiveStringIndex(defaultList[val]);
+        }
+        BinaryStdOut.close();
     }
 
     // if args[0] is "-", apply move-to-front encoding
@@ -64,7 +67,7 @@ public class MoveToFront {
     public static void main(String[] args) {
         if (args[0].equals("-")) encode();
         if (args[0].equals("+")) decode();
-        
+
 
         // encode();
     }
