@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="Saving the latest changes" />
+    <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="cleaned up the extra data structures">
+      <change afterPath="$PROJECT_DIR$/abra_bin.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/abra_decimal.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/abra_encoded.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/abra_hex.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MoveToFront.class" beforeDir="false" afterPath="$PROJECT_DIR$/MoveToFront.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MoveToFront.java" beforeDir="false" afterPath="$PROJECT_DIR$/MoveToFront.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -107,7 +115,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.CircularSuffixArray.executor": "Debug",
-    "Application.MoveToFront.executor": "Debug",
+    "Application.MoveToFront.executor": "Run",
     "Attach to process.localhost:5005.executor": "ProcessAttachDebug",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -122,6 +130,8 @@
     <configuration name="CircularSuffixArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CircularSuffixArray" />
       <module name="Algorithms, Part II" />
+      <option name="REDIRECT_INPUT" value="true" />
+      <option name="INPUT_FILE" value="abra_hex.txt" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -129,13 +139,16 @@
     <configuration name="MoveToFront" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MoveToFront" />
       <module name="Algorithms, Part II" />
+      <option name="PROGRAM_PARAMETERS" value="+" />
+      <option name="REDIRECT_INPUT" value="true" />
+      <option name="INPUT_FILE" value="abra_decimal.txt" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.CircularSuffixArray" />
       <item itemvalue="Application.MoveToFront" />
+      <item itemvalue="Application.CircularSuffixArray" />
     </list>
     <recent_temporary>
       <list>
@@ -328,7 +341,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759187969852</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="cleaned up the extra data structures">
+      <option name="closed" value="true" />
+      <created>1759254707290</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1759254707290</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TodoView">
@@ -385,16 +406,12 @@
     <MESSAGE value="Need to make sure index[], next[], and t[] populate with the right values." />
     <MESSAGE value="Saving what I have before making drastic changes based on new insight." />
     <MESSAGE value="Saving the latest changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Saving the latest changes" />
+    <MESSAGE value="cleaned up the extra data structures" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleaned up the extra data structures" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/MoveToFront.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/CircularSuffixArray.java</url>
           <line>35</line>
@@ -405,9 +422,38 @@
           <line>27</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/MoveToFront.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/MoveToFront.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/MoveToFront.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/MoveToFront.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/MoveToFront.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
         <breakpoint type="java-exception">
           <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
           <option name="timeStamp" value="9" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.util.NoSuchElementException" package="java.util" />
+          <option name="timeStamp" value="15" />
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>

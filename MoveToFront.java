@@ -50,6 +50,13 @@ public class MoveToFront {
     // apply move-to-front decoding, reading from standard input and writing to standard output
     public static void decode() {
         System.out.println("Decoding.");
+        defaultList = new char[R];
+        for (int i = 0; i < R; i++) {
+            defaultList[i] = (char) i;
+        }
+        BinaryStdOut.flush();
+        int val = BinaryStdIn.readChar();
+        System.out.println(val);
     }
 
     // if args[0] is "-", apply move-to-front encoding
@@ -57,6 +64,8 @@ public class MoveToFront {
     public static void main(String[] args) {
         if (args[0].equals("-")) encode();
         if (args[0].equals("+")) decode();
+        
+
         // encode();
     }
 }
