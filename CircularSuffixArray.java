@@ -18,7 +18,7 @@ public class CircularSuffixArray {
     // circular suffix array of s
     public CircularSuffixArray(String s) {
         if (s == null) throw new IllegalArgumentException("String object is null.");
-        // todo - I need to change this to meet the performance requirements of n + R Space and NlgN constructor time
+        // todo - Need to implement MSD for this tomorrow
         N = s.length();
         index = new int[N];
         next = new int[N];
@@ -39,13 +39,13 @@ public class CircularSuffixArray {
                 colIndex++;
             }
         }
-        // System.out.println("Before Sorting: ");
-        // for (int i = 0; i < N; i++) {
-        //     for (int j = 1; j < N + 1; j++) {
-        //         System.out.printf("%c ", suffixes[i][j]);
-        //     }
-        //     System.out.println();
-        // }
+        System.out.println("Before Sorting: ");
+        for (int i = 0; i < N; i++) {
+            for (int j = 1; j < N + 1; j++) {
+                System.out.printf("%c ", suffixes[i][j]);
+            }
+            System.out.println();
+        }
 
         System.out.println("After Sorting:");
         Arrays.sort(suffixes, new Comparator<char[]>() {
@@ -57,12 +57,12 @@ public class CircularSuffixArray {
                 return 0;
             }
         });
-        // for (int i = 0; i < N; i++) {
-        //     for (int j = 1; j < N + 1; j++) {
-        //         System.out.printf("%c ", suffixes[i][j]);
-        //     }
-        //     System.out.println();
-        // }
+        for (int i = 0; i < N; i++) {
+            for (int j = 1; j < N + 1; j++) {
+                System.out.printf("%c ", suffixes[i][j]);
+            }
+            System.out.println();
+        }
 
         // i is the sortedIndex, and the Symbol table can give me the original index of the string
         // ST<Integer, Character> originalIndex = new ST<>();

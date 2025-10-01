@@ -51,10 +51,10 @@ public class BurrowsWheeler {
         for (int i = 0; i < N; i++) {
             t[i] = aux[i];
         }
-        for (char c : t) {
-            System.out.printf("%c ", c);
-        }
-        System.out.println();
+        // for (char c : t) {
+        //     System.out.printf("%c ", c);
+        // }
+        // System.out.println();
     }
 
     // if args[0] is "-", apply Burrows-Wheeler transform

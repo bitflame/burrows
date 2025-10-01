@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="Saving the latest">
-      <change afterPath="$PROJECT_DIR$/BurrowsWheeler.java" afterDir="false" />
+    <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="Saving the latest.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CircularSuffixArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/CircularSuffixArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BurrowsWheeler.java" beforeDir="false" afterPath="$PROJECT_DIR$/BurrowsWheeler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +122,7 @@
     &quot;last_opened_file_path&quot;: &quot;/home/firoozyasin/IdeaProjects/burrows&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.BurrowsWheeler">
+  <component name="RunManager" selected="Application.CircularSuffixArray">
     <configuration name="BurrowsWheeler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BurrowsWheeler" />
       <module name="Algorithms, Part II" />
@@ -157,8 +156,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BurrowsWheeler" />
         <item itemvalue="Application.CircularSuffixArray" />
+        <item itemvalue="Application.BurrowsWheeler" />
         <item itemvalue="Application.MoveToFront" />
       </list>
     </recent_temporary>
@@ -395,7 +394,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759336991893</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Saving the latest.">
+      <option name="closed" value="true" />
+      <created>1759358025858</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1759358025858</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TodoView">
@@ -447,7 +454,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Saving the latest. Circular suffix seems to be working." />
-    <MESSAGE value="Saving the latest." />
     <MESSAGE value="Need to make sure index[], next[], and t[] populate with the right values." />
     <MESSAGE value="Saving what I have before making drastic changes based on new insight." />
     <MESSAGE value="Saving the latest changes" />
@@ -457,7 +463,8 @@
     <MESSAGE value="Added a minor fix for strings that start with zero." />
     <MESSAGE value="Stored the characters and the indices in a symbol table. Then just used the iterator to print them in the sorted order of the keys/indices." />
     <MESSAGE value="Saving the latest" />
-    <option name="LAST_COMMIT_MESSAGE" value="Saving the latest" />
+    <MESSAGE value="Saving the latest." />
+    <option name="LAST_COMMIT_MESSAGE" value="Saving the latest." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
