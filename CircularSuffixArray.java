@@ -59,29 +59,22 @@ public class CircularSuffixArray {
             }
         });
         for (int i = 0; i < N; i++) {
-            index[i] = -1;
-            next[i] = -1;
-        }
-        int suffixIndex = 0, rowIndex = 0;
-        while (suffixIndex < N) {
-            if (suffixIndex == suffixes[rowIndex][0] && index[rowIndex] != -1) {
-                index[rowIndex] = suffixIndex;
-                suffixIndex++;
-            }
-        }
-
-        // i is the sortedIndex, and the Symbol table can give me the original index of the string
-        ST<Character, Integer> originalIndex = new ST<>();
-        for (int i = 0; i < N; i++) {
-            originalIndex.put(suffixes[i][0], i);
-        }
-        for (int i = 0; i < N; i++) {
-            for (int j = 1; j <= N; j++) {
+            for (int j = 1; j < N + 1; j++) {
                 System.out.printf("%c ", suffixes[i][j]);
             }
             System.out.println();
         }
 
+        // i is the sortedIndex, and the Symbol table can give me the original index of the string
+        ST<Integer, Character> originalIndex = new ST<>();
+        for (int i = 0; i < N; i++) {
+            originalIndex.put((int) suffixes[i][0], suffixes[i][1]);
+        }
+        System.out.println("Here is the message extracted using Symbole Table: ");
+        for (int i : originalIndex.keys()) {
+            System.out.printf("%c", originalIndex.get(i));
+        }
+        System.out.println();
     }
 
     private char[] shiftArry(char[] chars) {

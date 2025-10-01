@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="Looks like the decoder is working also.">
+    <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="Added a minor fix for strings that start with zero.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoveToFront.java" beforeDir="false" afterPath="$PROJECT_DIR$/MoveToFront.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CircularSuffixArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/CircularSuffixArray.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +109,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.CircularSuffixArray.executor": "Debug",
+    "Application.CircularSuffixArray.executor": "Run",
     "Application.MoveToFront.executor": "Run",
     "Attach to process.localhost:5005.executor": "ProcessAttachDebug",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
@@ -121,12 +121,12 @@
     "last_opened_file_path": "/home/firoozyasin/IdeaProjects/burrows"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.MoveToFront">
+  <component name="RunManager" selected="Application.CircularSuffixArray">
     <configuration name="CircularSuffixArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CircularSuffixArray" />
       <module name="Algorithms, Part II" />
       <option name="REDIRECT_INPUT" value="true" />
-      <option name="INPUT_FILE" value="abra_hex.txt" />
+      <option name="INPUT_FILE" value="abra.txt" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -147,8 +147,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MoveToFront" />
         <item itemvalue="Application.CircularSuffixArray" />
+        <item itemvalue="Application.MoveToFront" />
       </list>
     </recent_temporary>
   </component>
@@ -360,7 +360,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759271993862</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Added a minor fix for strings that start with zero.">
+      <option name="closed" value="true" />
+      <created>1759272718443</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1759272718443</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TodoView">
@@ -420,7 +428,8 @@
     <MESSAGE value="cleaned up the extra data structures" />
     <MESSAGE value="working on decoding." />
     <MESSAGE value="Looks like the decoder is working also." />
-    <option name="LAST_COMMIT_MESSAGE" value="Looks like the decoder is working also." />
+    <MESSAGE value="Added a minor fix for strings that start with zero." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a minor fix for strings that start with zero." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -454,6 +463,11 @@
           <url>file://$PROJECT_DIR$/MoveToFront.java</url>
           <line>21</line>
           <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/CircularSuffixArray.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
         <breakpoint type="java-exception">
           <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
