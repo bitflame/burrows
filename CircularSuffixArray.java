@@ -18,6 +18,7 @@ public class CircularSuffixArray {
     // circular suffix array of s
     public CircularSuffixArray(String s) {
         if (s == null) throw new IllegalArgumentException("String object is null.");
+        // todo - I need to change this to meet the performance requirements of n + R Space and NlgN constructor time
         N = s.length();
         index = new int[N];
         next = new int[N];
