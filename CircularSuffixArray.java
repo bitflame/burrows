@@ -4,8 +4,6 @@
  *  Description:
  **************************************************************************** */
 
-import edu.princeton.cs.algs4.ST;
-
 import java.util.Arrays;
 import java.util.Comparator;
 
@@ -40,13 +38,13 @@ public class CircularSuffixArray {
                 colIndex++;
             }
         }
-        System.out.println("Before Sorting: ");
-        for (int i = 0; i < N; i++) {
-            for (int j = 1; j < N + 1; j++) {
-                System.out.printf("%c ", suffixes[i][j]);
-            }
-            System.out.println();
-        }
+        // System.out.println("Before Sorting: ");
+        // for (int i = 0; i < N; i++) {
+        //     for (int j = 1; j < N + 1; j++) {
+        //         System.out.printf("%c ", suffixes[i][j]);
+        //     }
+        //     System.out.println();
+        // }
 
         System.out.println("After Sorting:");
         Arrays.sort(suffixes, new Comparator<char[]>() {
@@ -58,23 +56,23 @@ public class CircularSuffixArray {
                 return 0;
             }
         });
-        for (int i = 0; i < N; i++) {
-            for (int j = 1; j < N + 1; j++) {
-                System.out.printf("%c ", suffixes[i][j]);
-            }
-            System.out.println();
-        }
+        // for (int i = 0; i < N; i++) {
+        //     for (int j = 1; j < N + 1; j++) {
+        //         System.out.printf("%c ", suffixes[i][j]);
+        //     }
+        //     System.out.println();
+        // }
 
         // i is the sortedIndex, and the Symbol table can give me the original index of the string
-        ST<Integer, Character> originalIndex = new ST<>();
-        for (int i = 0; i < N; i++) {
-            originalIndex.put((int) suffixes[i][0], suffixes[i][1]);
-        }
-        System.out.println("Here is the message extracted using Symbole Table: ");
-        for (int i : originalIndex.keys()) {
-            System.out.printf("%c", originalIndex.get(i));
-        }
-        System.out.println();
+        // ST<Integer, Character> originalIndex = new ST<>();
+        // for (int i = 0; i < N; i++) {
+        //     originalIndex.put((int) suffixes[i][0], suffixes[i][1]);
+        // }
+        // System.out.println("Here is the message extracted using Symbole Table: ");
+        // for (int i : originalIndex.keys()) {
+        //     System.out.printf("%c", originalIndex.get(i));
+        // }
+        // System.out.println();
     }
 
     private char[] shiftArry(char[] chars) {
