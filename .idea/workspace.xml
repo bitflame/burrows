@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="Saving the latest.">
+      <change afterPath="$PROJECT_DIR$/CircularSuffix_MSD.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BurrowsWheeler.java" beforeDir="false" afterPath="$PROJECT_DIR$/BurrowsWheeler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +110,8 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Application.BurrowsWheeler.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.CircularSuffixArray.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CircularSuffixArray.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.CircularSuffix_MSD.executor&quot;: &quot;Debug&quot;,
     &quot;Application.MoveToFront.executor&quot;: &quot;Run&quot;,
     &quot;Attach to process.localhost:5005.executor&quot;: &quot;ProcessAttachDebug&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
@@ -122,7 +123,7 @@
     &quot;last_opened_file_path&quot;: &quot;/home/firoozyasin/IdeaProjects/burrows&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.CircularSuffixArray">
+  <component name="RunManager" selected="Application.CircularSuffix_MSD">
     <configuration name="BurrowsWheeler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BurrowsWheeler" />
       <module name="Algorithms, Part II" />
@@ -139,6 +140,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CircularSuffix_MSD" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CircularSuffix_MSD" />
+      <module name="Algorithms, Part II" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MoveToFront" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MoveToFront" />
       <module name="Algorithms, Part II" />
@@ -151,11 +159,13 @@
     </configuration>
     <list>
       <item itemvalue="Application.BurrowsWheeler" />
-      <item itemvalue="Application.MoveToFront" />
       <item itemvalue="Application.CircularSuffixArray" />
+      <item itemvalue="Application.CircularSuffix_MSD" />
+      <item itemvalue="Application.MoveToFront" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CircularSuffix_MSD" />
         <item itemvalue="Application.CircularSuffixArray" />
         <item itemvalue="Application.BurrowsWheeler" />
         <item itemvalue="Application.MoveToFront" />
@@ -402,7 +412,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759358025858</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Saving the latest.">
+      <option name="closed" value="true" />
+      <created>1759359320587</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1759359320587</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TodoView">
@@ -513,6 +531,26 @@
           <url>file://$PROJECT_DIR$/BurrowsWheeler.java</url>
           <line>19</line>
           <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/CircularSuffix_MSD.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/CircularSuffix_MSD.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/CircularSuffix_MSD.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/CircularSuffix_MSD.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="31" />
         </line-breakpoint>
         <breakpoint type="java-exception">
           <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
