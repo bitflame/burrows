@@ -74,7 +74,7 @@ public class CircularSuffix_MSD {
         }
         System.out.println();
         aux = new String[a.length];
-        sort(a, aux, 0, string.length() - 1, 1);
+        sort(a, aux, 0, a.length - 1, 1);
         System.out.println("Here is contents of a after soring: ");
         for (String s : a) {
             System.out.println(s);
