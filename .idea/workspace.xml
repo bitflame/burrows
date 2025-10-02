@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="Radix sort works for one column. Need to figure out how many columns I need to do it iteratively. The recursive version does it, but I need to avoid that.">
+    <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="Saving the latest.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CircularSuffix_MSD.java" beforeDir="false" afterPath="$PROJECT_DIR$/CircularSuffix_MSD.java" afterDir="false" />
     </list>
@@ -111,7 +111,7 @@
   "keyToString": {
     "Application.BurrowsWheeler.executor": "Debug",
     "Application.CircularSuffixArray.executor": "Debug",
-    "Application.CircularSuffix_MSD.executor": "Debug",
+    "Application.CircularSuffix_MSD.executor": "Run",
     "Application.MoveToFront.executor": "Run",
     "Attach to process.localhost:5005.executor": "ProcessAttachDebug",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
@@ -452,7 +452,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759441833739</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Saving the latest.">
+      <option name="closed" value="true" />
+      <created>1759443344867</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1759443344867</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TodoView">
@@ -513,9 +521,9 @@
     <MESSAGE value="Added a minor fix for strings that start with zero." />
     <MESSAGE value="Stored the characters and the indices in a symbol table. Then just used the iterator to print them in the sorted order of the keys/indices." />
     <MESSAGE value="Saving the latest" />
-    <MESSAGE value="Saving the latest." />
     <MESSAGE value="Radix sort works for one column. Need to figure out how many columns I need to do it iteratively. The recursive version does it, but I need to avoid that." />
-    <option name="LAST_COMMIT_MESSAGE" value="Radix sort works for one column. Need to figure out how many columns I need to do it iteratively. The recursive version does it, but I need to avoid that." />
+    <MESSAGE value="Saving the latest." />
+    <option name="LAST_COMMIT_MESSAGE" value="Saving the latest." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
