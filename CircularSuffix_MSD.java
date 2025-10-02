@@ -10,7 +10,7 @@ public class CircularSuffix_MSD {
     private static char[][] suffixes;
     private static int N;
     private static char[] stringChars;
-
+    private static String[] a;
 
     private static int charAt(String s, int d) {
         if (d < s.length()) return s.charAt(d);
@@ -41,6 +41,7 @@ public class CircularSuffix_MSD {
         aux = new String[string.length()];
         suffixes = new char[N][N + 1];
         suffixes[0][0] = 0;
+        a = new String[N];
         int colIndex = 1, shiftedStringIndex = 1;
         stringChars = string.toCharArray();
         for (char c : stringChars) {
@@ -61,12 +62,17 @@ public class CircularSuffix_MSD {
             // System.out.println(suffixes[i]);
         }
         System.out.println("Before Sorting: ");
+        StringBuilder sb;
         for (int i = 0; i < N; i++) {
-            for (int j = 1; j < N + 1; j++) {
+            sb = new StringBuilder();
+            for (int j = 0; j < N + 1; j++) {
                 System.out.printf("%c ", suffixes[i][j]);
+                sb.append(suffixes[i][j]);
             }
+            a[i] = sb.toString();
             System.out.println();
         }
+        System.out.println();
         sort(string.split(""), 0, string.length() - 1, 0);
     }
 
