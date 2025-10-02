@@ -111,7 +111,7 @@
   "keyToString": {
     "Application.BurrowsWheeler.executor": "Debug",
     "Application.CircularSuffixArray.executor": "Debug",
-    "Application.CircularSuffix_MSD.executor": "Run",
+    "Application.CircularSuffix_MSD.executor": "Debug",
     "Application.MoveToFront.executor": "Run",
     "Attach to process.localhost:5005.executor": "ProcessAttachDebug",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
@@ -436,7 +436,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759438720546</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Saving the latest.">
+      <option name="closed" value="true" />
+      <created>1759440123511</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1759440123511</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TodoView">
@@ -548,7 +556,7 @@
           <line>19</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/CircularSuffix_MSD.java</url>
           <line>20</line>
           <option name="timeStamp" value="27" />
@@ -563,10 +571,15 @@
           <line>39</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/CircularSuffix_MSD.java</url>
           <line>63</line>
           <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/CircularSuffix_MSD.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="33" />
         </line-breakpoint>
         <breakpoint type="java-exception">
           <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />

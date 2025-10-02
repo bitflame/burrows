@@ -17,7 +17,7 @@ public class CircularSuffix_MSD {
         else return -1;
     }
 
-    private static void sort(String[] a, int lo, int hi, int d) {
+    private static void sort(String[] a, String[] aux, int lo, int hi, int d) {
         int[] count = new int[R + 2];
         // compute freq counts
         for (int i = 0; i <= hi; i++) {
@@ -38,7 +38,7 @@ public class CircularSuffix_MSD {
 
     CircularSuffix_MSD(String string) {
         N = string.length();
-        aux = new String[string.length()];
+
         suffixes = new char[N][N + 1];
         suffixes[0][0] = 0;
         a = new String[N];
@@ -73,7 +73,12 @@ public class CircularSuffix_MSD {
             System.out.println();
         }
         System.out.println();
-        sort(string.split(""), 0, string.length() - 1, 0);
+        aux = new String[a.length];
+        sort(a, aux, 0, string.length() - 1, 1);
+        System.out.println("Here is contents of a after soring: ");
+        for (String s : a) {
+            System.out.println(s);
+        }
     }
 
     private char[] shiftArry(char[] chars) {
