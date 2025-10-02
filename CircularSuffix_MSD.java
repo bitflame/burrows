@@ -47,16 +47,25 @@ public class CircularSuffix_MSD {
             suffixes[0][colIndex] = c;
             colIndex++;
         }
-        for (int i = 0; i < N; i++) {
+        // System.out.println("Here is line:" + 0);
+        // System.out.println(suffixes[0]);
+        for (int i = 1; i < N; i++) {
             suffixes[i][0] = (char) shiftedStringIndex;
             shiftedStringIndex++;
             colIndex = 1;
-            System.out.println("Here is line:" + i);
-            System.out.println(suffixes[i]);
             for (char c : shiftArry(stringChars)) {
                 suffixes[i][colIndex] = c;
                 colIndex++;
             }
+            // System.out.println("Here is line:" + i);
+            // System.out.println(suffixes[i]);
+        }
+        System.out.println("Before Sorting: ");
+        for (int i = 0; i < N; i++) {
+            for (int j = 1; j < N + 1; j++) {
+                System.out.printf("%c ", suffixes[i][j]);
+            }
+            System.out.println();
         }
         sort(string.split(""), 0, string.length() - 1, 0);
     }

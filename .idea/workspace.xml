@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="Saving the latest.">
-      <change afterPath="$PROJECT_DIR$/CircularSuffix_MSD.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CircularSuffix_MSD.java" beforeDir="false" afterPath="$PROJECT_DIR$/CircularSuffix_MSD.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,10 +158,10 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.BurrowsWheeler" />
-      <item itemvalue="Application.CircularSuffixArray" />
       <item itemvalue="Application.CircularSuffix_MSD" />
+      <item itemvalue="Application.BurrowsWheeler" />
       <item itemvalue="Application.MoveToFront" />
+      <item itemvalue="Application.CircularSuffixArray" />
     </list>
     <recent_temporary>
       <list>
@@ -420,7 +420,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759359320587</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Saving the latest.">
+      <option name="closed" value="true" />
+      <created>1759437514816</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1759437514816</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TodoView">
@@ -537,7 +545,7 @@
           <line>20</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/CircularSuffix_MSD.java</url>
           <line>29</line>
           <option name="timeStamp" value="28" />
@@ -549,8 +557,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/CircularSuffix_MSD.java</url>
-          <line>58</line>
-          <option name="timeStamp" value="31" />
+          <line>62</line>
+          <option name="timeStamp" value="32" />
         </line-breakpoint>
         <breakpoint type="java-exception">
           <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
