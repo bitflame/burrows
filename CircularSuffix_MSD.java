@@ -5,103 +5,53 @@
  **************************************************************************** */
 
 public class CircularSuffix_MSD {
+    private static int start;
     private static int R = 256;
-    private static String[] aux;
-    private static char[][] suffixes;
-    private static int N;
-    private static char[] stringChars;
-    private static String[] a;
-    private static int[] count;
 
-    private static int charAt(String s, int d) {
-        if (d < s.length()) return s.charAt(d);
-        else return -1;
+    private static String str = "ABRACADABRA!";
+    private static String[] aux;
+
+    // modified MSD to take a starting position
+    public static void sort(String[] a, int start) {
+        int N = a.length;
+        aux = new String[N];
+        sort(a, 0, N - 1, 0);
     }
 
-    private static void sort(String[] a, String[] aux, int lo, int hi, int d) {
-        count = new int[R + 2];
-        // compute freq counts
-        for (int i = 0; i <= hi; i++) {
-            count[charAt(a[i], d) + 2]++;
+    private static void sort(String[] a, int lo, int hi, int d) {
+        int[] count = new int[R + 2];
+        for (int i = lo; i <= hi; i++) {
+            count[charAt(i) + 2]++;
         }
-        // Transform counts to indices 
         for (int r = 0; r < R + 1; r++) {
             count[r + 1] += count[r];
         }
-        System.out.printf("");
-        for (int i = 0; i <= hi; i++) {
-            aux[count[charAt(a[i], d) + 1]++] = a[i];
+        for (int i = lo; i <= hi; i++) {
+            aux[count[charAt(i) + 1]++] = a[i];
         }
+
         for (int i = lo; i <= hi; i++) {
             a[i] = aux[i - lo];
         }
+        // There is a ommitted recursive call below in the text
     }
 
-    CircularSuffix_MSD(String string) {
-        N = string.length();
-        suffixes = new char[N][N + 1];
-        suffixes[0][0] = 0;
-        a = new String[N];
-        int colIndex = 1, shiftedStringIndex = 1;
-        stringChars = string.toCharArray();
-        for (char c : stringChars) {
-            suffixes[0][colIndex] = c;
-            colIndex++;
-        }
-        // System.out.println("Here is line:" + 0);
-        // System.out.println(suffixes[0]);
-        for (int i = 1; i < N; i++) {
-            suffixes[i][0] = (char) shiftedStringIndex;
-            shiftedStringIndex++;
-            colIndex = 1;
-            for (char c : shiftArry(stringChars)) {
-                suffixes[i][colIndex] = c;
-                colIndex++;
-            }
-            // System.out.println("Here is line:" + i);
-            // System.out.println(suffixes[i]);
-        }
-        System.out.println("Before Sorting: ");
-        StringBuilder sb;
-        for (int i = 0; i < N; i++) {
-            sb = new StringBuilder();
-            for (int j = 1; j < N + 1; j++) {
-                System.out.printf("%c ", suffixes[i][j]);
-                sb.append(suffixes[i][j]);
-            }
-            a[i] = sb.toString();
-            System.out.println();
-        }
-        System.out.println();
-        aux = new String[a.length];
-        int lo = 0, high = N - 1, r = 0, d = 0;
-        sort(a, aux, 0, high, d);
-        while (r < R) {
-            lo = lo + count[r];
-            high = lo + (count[r + 1] - 1);
-            System.out.printf("lo=%d high=%d\n", lo, high);
-            sort(a, aux, lo, high, d + 1);
-            r++;
-        }
-        System.out.println("Here is contents of a after soring: ");
-        int count = 0;
-        for (String s : a) {
-            count++;
-            System.out.println(s);
-        }
-        System.out.printf("There are a total of %d arrays.", count);
+
+    private static int charAt(int i) {
+        return i >= str.length() ? -1 : str.charAt((start + i) % str.length());
     }
 
-    private char[] shiftArry(char[] chars) {
-        char temp = chars[0];
-        for (int i = 0; i < N - 1; i++) {
-            chars[i] = chars[i + 1];
-        }
-        chars[N - 1] = temp;
-        return chars;
+
+    CircularSuffix_MSD(int start) {
+        this.start = start;
     }
 
     public static void main(String[] args) {
-        CircularSuffix_MSD circularSuffixMsd = new CircularSuffix_MSD("ABRACADABRA!");
+        CircularSuffix_MSD[] suffixes = new CircularSuffix_MSD[12];
+        String a = "ABRACADABRA!";
+        for (int i = 0; i < a.length(); i++) {
+            suffixes[i] = new CircularSuffix_MSD(i);
+            System.out.println(suffixes[i].charAt(0));
+        }
     }
 }
