@@ -11,6 +11,7 @@ public class CircularSuffix_MSD {
     private static int N;
     private static char[] stringChars;
     private static String[] a;
+    private static int[] count;
 
     private static int charAt(String s, int d) {
         if (d < s.length()) return s.charAt(d);
@@ -18,7 +19,7 @@ public class CircularSuffix_MSD {
     }
 
     private static void sort(String[] a, String[] aux, int lo, int hi, int d) {
-        int[] count = new int[R + 2];
+        count = new int[R + 2];
         // compute freq counts
         for (int i = 0; i <= hi; i++) {
             count[charAt(a[i], d) + 2]++;
@@ -38,7 +39,6 @@ public class CircularSuffix_MSD {
 
     CircularSuffix_MSD(String string) {
         N = string.length();
-
         suffixes = new char[N][N + 1];
         suffixes[0][0] = 0;
         a = new String[N];
@@ -65,7 +65,7 @@ public class CircularSuffix_MSD {
         StringBuilder sb;
         for (int i = 0; i < N; i++) {
             sb = new StringBuilder();
-            for (int j = 0; j < N + 1; j++) {
+            for (int j = 1; j < N + 1; j++) {
                 System.out.printf("%c ", suffixes[i][j]);
                 sb.append(suffixes[i][j]);
             }
@@ -74,11 +74,22 @@ public class CircularSuffix_MSD {
         }
         System.out.println();
         aux = new String[a.length];
-        sort(a, aux, 0, a.length - 1, 1);
+        int lo = 0, high = N - 1, r = 0, d = 0;
+        sort(a, aux, 0, high, d);
+        while (r < R) {
+            lo = lo + count[r];
+            high = lo + (count[r + 1] - 1);
+            System.out.printf("lo=%d high=%d\n", lo, high);
+            sort(a, aux, lo, high, d + 1);
+            r++;
+        }
         System.out.println("Here is contents of a after soring: ");
+        int count = 0;
         for (String s : a) {
+            count++;
             System.out.println(s);
         }
+        System.out.printf("There are a total of %d arrays.", count);
     }
 
     private char[] shiftArry(char[] chars) {

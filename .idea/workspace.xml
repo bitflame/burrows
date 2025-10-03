@@ -460,7 +460,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759443344867</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Saving the latest.">
+      <option name="closed" value="true" />
+      <created>1759444676968</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1759444676968</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TodoView">
@@ -575,17 +583,17 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/CircularSuffix_MSD.java</url>
-          <line>20</line>
+          <line>21</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/CircularSuffix_MSD.java</url>
-          <line>29</line>
+          <line>30</line>
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/CircularSuffix_MSD.java</url>
-          <line>39</line>
+          <line>40</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
@@ -593,10 +601,15 @@
           <line>63</line>
           <option name="timeStamp" value="32" />
         </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/CircularSuffix_MSD.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/CircularSuffix_MSD.java</url>
-          <line>74</line>
-          <option name="timeStamp" value="33" />
+          <line>77</line>
+          <option name="timeStamp" value="37" />
         </line-breakpoint>
         <breakpoint type="java-exception">
           <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
