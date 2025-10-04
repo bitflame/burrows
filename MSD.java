@@ -6,7 +6,7 @@
 
 public class MSD {
     private static int R = 256;
-    private static final int M = 15;
+    private static int[] count;
     private static String[] aux;
 
     private static int charAt(String s, int d) {
@@ -14,16 +14,17 @@ public class MSD {
         else return -1;
     }
 
-    private void sort(String[] a) {
+    private void sort(String[] a, int start) {
         int N = a.length;
         aux = new String[N];
-        sort(a, 0, N - 1, 0);
+        sort(a, 0, N - 1, start);
     }
 
-    // todo - First sort the suffixes array to the modified MSD that takes the start character, then try to get rid of the creating the suffixes and using the index
+    // todo - First sort the suffixes array to the modified MSD that takes the start character, then try to get rid of the creating the suffixes and using the
+    //  index. After the first sort, find the strings with the same first letter and sort them starting from the next char, start with the char in the next cell
     private static void sort(String[] a, int lo, int hi, int d) {
         if (hi < lo) return;
-        int[] count = new int[R + 2];
+        count = new int[R + 2];
         for (int i = lo; i <= hi; i++) {
             count[charAt(a[i], d) + 2]++;
         }
@@ -36,10 +37,10 @@ public class MSD {
         for (int i = lo; i <= hi; i++) {
             a[i] = aux[i - lo];
         }
-        for (int r = 0; r < R; r++) {
-            // System.out.printf("lo: %d, hi: %d: d: %d\n", lo, hi, d);
-            sort(a, lo + count[r], lo + count[r + 1] - 1, d + 1);
-        }
+        // for (int r = 0; r < R; r++) {
+        // System.out.printf("lo: %d, hi: %d: d: %d\n", lo, hi, d);
+        // sort(a, lo + count[r], lo + count[r + 1] - 1, d + 1);
+        // }
     }
 
     public static void main(String[] args) {
@@ -49,7 +50,16 @@ public class MSD {
         String stringTwo
                 = "ABRACADABRA! BRACADABRA!A RACADABRA!AB ACADABRA!ABR CADABRA!ABRA ADABRA!ABRAC DABRA!ABRACA ABRA!ABRACAD BRA!ABRACADA RA!ABRACADAB A!ABRACADABR !ABRACADABRA";
         String[] a = stringTwo.split(" ");
-        msd.sort(a);
+        int N = a.length;
+        int lo = 0, hi = N, start = 0;
+        for (int i = 0; i < R && start < a.length; i++) {
+            if (a[start] == a[start + 1]) {
+                msd.sort(a, lo, hi, start);
+                hi += lo + count[i + 1] - 1;
+                lo += count[i];
+                start++;
+            }
+        }
         for (String s : a) {
             System.out.printf("%s\n", s);
         }
