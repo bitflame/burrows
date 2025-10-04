@@ -14,10 +14,10 @@ public class MSD {
         else return -1;
     }
 
-    private void sort(String[] a) {
+    private void sort(String[] a, int start) {
         int N = a.length;
         aux = new String[N];
-        sort(a, 0, N - 1, 0);
+        sort(a, start, N - 1, 0);
     }
 
     // todo - First sort the suffixes array to the modified MSD that takes the start character, then try to get rid of the creating the suffixes and using the index
@@ -30,15 +30,16 @@ public class MSD {
         for (int r = 0; r < R + 1; r++) {
             count[r + 1] += count[r];
         }
+        System.out.println();
         for (int i = lo; i <= hi; i++) {
             aux[count[charAt(a[i], d) + 1]++] = a[i];
         }
         for (int i = lo; i <= hi; i++) {
             a[i] = aux[i - lo];
         }
-        for (int r = 0; r < R; r++) {
-            sort(a, lo + count[r], lo + count[r + 1] - 1, d + 1);
-        }
+        // for (int r = 0; r < R; r++) {
+        //     sort(a, lo + count[r], lo + count[r + 1] - 1, d + 1);
+        // }
     }
 
     public static void main(String[] args) {
@@ -48,6 +49,12 @@ public class MSD {
         String stringTwo
                 = "ABRACADABRA! BRACADABRA!A RACADABRA!AB ACADABRA!ABR CADABRA!ABRA ADABRA!ABRAC DABRA!ABRACA ABRA!ABRACAD BRA!ABRACADA RA!ABRACADAB A!ABRACADABR !ABRACADABRA";
         String[] a = stringTwo.split(" ");
-        msd.sort(a);
+        for (int i = 0; i < a.length; i++) {
+            msd.sort(a, i);
+        }
+
+        for (String s : a) {
+            System.out.println(s);
+        }
     }
 }
