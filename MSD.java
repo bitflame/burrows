@@ -55,6 +55,7 @@ public class MSD {
         for (int i = 0; i < R && start < a.length; i++) {
             if (start == 0 || a[stringIndex].charAt(start - 1) == a[stringIndex + 1].charAt(
                     start - 1)) {
+                // todo - it is checking string 1 and 2's beginning. Change it so it checks it for any of the strings
                 aux = new String[N];
                 msd.sort(a, lo, hi, start);
                 while (lo + count[i + 1] - 1 <= count[i]) {
