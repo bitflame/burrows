@@ -112,7 +112,7 @@
     "Application.BurrowsWheeler.executor": "Debug",
     "Application.CircularSuffixArray.executor": "Debug",
     "Application.CircularSuffix_MSD.executor": "Debug",
-    "Application.MSD.executor": "Run",
+    "Application.MSD.executor": "Debug",
     "Application.MoveToFront.executor": "Run",
     "Attach to process.localhost:5005.executor": "ProcessAttachDebug",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
@@ -486,15 +486,7 @@
       <option name="project" value="LOCAL" />
       <updated>1759514094804</updated>
     </task>
-    <task id="LOCAL-00038" summary="Saving the latest.">
-      <option name="closed" value="true" />
-      <created>1759533366338</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1759533366338</updated>
-    </task>
-    <option name="localTasksCounter" value="39" />
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TodoView">
@@ -612,15 +604,20 @@
           <line>50</line>
           <option name="timeStamp" value="40" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/MSD.java</url>
           <line>17</line>
           <option name="timeStamp" value="41" />
         </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/MSD.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/MSD.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="43" />
+          <line>40</line>
+          <option name="timeStamp" value="49" />
         </line-breakpoint>
         <breakpoint type="java-exception">
           <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
