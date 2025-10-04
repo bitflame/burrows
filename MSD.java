@@ -51,13 +51,19 @@ public class MSD {
                 = "ABRACADABRA! BRACADABRA!A RACADABRA!AB ACADABRA!ABR CADABRA!ABRA ADABRA!ABRAC DABRA!ABRACA ABRA!ABRACAD BRA!ABRACADA RA!ABRACADAB A!ABRACADABR !ABRACADABRA";
         String[] a = stringTwo.split(" ");
         int N = a.length;
-        int lo = 0, hi = N, start = 0;
+        int lo = 0, hi = N - 1, start = 0, stringIndex = 0;
         for (int i = 0; i < R && start < a.length; i++) {
-            if (a[start] == a[start + 1]) {
+            if (start == 0 || a[stringIndex].charAt(start - 1) == a[stringIndex + 1].charAt(
+                    start - 1)) {
+                aux = new String[N];
                 msd.sort(a, lo, hi, start);
-                hi += lo + count[i + 1] - 1;
+                while (lo + count[i + 1] - 1 <= count[i]) {
+                    i++;
+                }
+                hi = lo + count[i + 1] - 1;
                 lo += count[i];
                 start++;
+                stringIndex++;
             }
         }
         for (String s : a) {
