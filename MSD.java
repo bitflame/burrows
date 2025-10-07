@@ -26,16 +26,19 @@ public class MSD {
 
     // todo - this is not soring right, the code never runs for lo = 6, hi=7 and d=3
     private static void sort(String[] a, String[] aux, int lo, int hi, int d) {
+
         if (hi <= lo + M) {
-            Insertion.sort(a, lo, hi, new Comparator() {
-                public int compare(Object o1, Object o2) {
-                    String v = (String) o1;
-                    String w = (String) o2;
-                    if (v.charAt(d) > w.charAt(d)) return 1;
-                    else if (w.charAt(d) < v.charAt(d)) return -1;
-                    return 0;
-                }
-            });
+
+            sort(a, lo, hi, d);
+            // Insertion.sort(a, lo, hi, new Comparator() {
+            //     public int compare(Object o1, Object o2) {
+            //         String v = (String) o1;
+            //         String w = (String) o2;
+            //         if (v.charAt(d) > w.charAt(d)) return 1;
+            //         else if (w.charAt(d) < v.charAt(d)) return -1;
+            //         return 0;
+            //     }
+            // });
             return;
         }
 
@@ -54,6 +57,7 @@ public class MSD {
             a[i] = aux[i - lo];
 
         for (int r = 0; r < R; r++) {
+            System.out.printf("d: %d lo: %d hi: %d\n", d, lo, hi);
             sort(a, aux, lo + count[r], lo + count[r + 1] - 1, d + 1);
         }
 
@@ -68,7 +72,11 @@ public class MSD {
     }
 
     private static boolean less(String v, String w, int d) {
-        return v.charAt(d) < w.charAt(d);
+        for (int i = 0; i <= d; i++) {
+            if (v.charAt(i) < w.charAt(i)) return true;
+        }
+        // return v.charAt(d) < w.charAt(d);
+        return false;
     }
 
     private static void exch(Comparable[] a, int i, int j) {
@@ -96,7 +104,7 @@ public class MSD {
             System.out.println(s);
         }
         /*          My own insertion sort                    */
-        System.out.printf("This is the resulf of my own sort");
+        System.out.printf("This is the resulf of my own sort\n");
         sort(my_tests, 0, my_tests.length - 1, d);
         for (String s : my_tests) {
             System.out.println(s);
