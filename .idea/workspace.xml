@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="Saving the latest. It looks like iterative version of Radix sort that was described in forums is working.">
+    <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="Saving the latest. Need to modify the code to check the charAt() for all the strings. A while loop should do it.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CircularSuffix_MSD.java" beforeDir="false" afterPath="$PROJECT_DIR$/CircularSuffix_MSD.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MSD.java" beforeDir="false" afterPath="$PROJECT_DIR$/MSD.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -112,7 +113,7 @@
     "Application.BurrowsWheeler.executor": "Debug",
     "Application.CircularSuffixArray.executor": "Debug",
     "Application.CircularSuffix_MSD.executor": "Debug",
-    "Application.MSD.executor": "Run",
+    "Application.MSD.executor": "Debug",
     "Application.MoveToFront.executor": "Run",
     "Attach to process.localhost:5005.executor": "ProcessAttachDebug",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
@@ -166,17 +167,17 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.MSD" />
-      <item itemvalue="Application.CircularSuffix_MSD" />
       <item itemvalue="Application.BurrowsWheeler" />
-      <item itemvalue="Application.MoveToFront" />
       <item itemvalue="Application.CircularSuffixArray" />
+      <item itemvalue="Application.CircularSuffix_MSD" />
+      <item itemvalue="Application.MSD" />
+      <item itemvalue="Application.MoveToFront" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.MSD" />
-        <item itemvalue="Application.CircularSuffix_MSD" />
         <item itemvalue="Application.CircularSuffixArray" />
+        <item itemvalue="Application.CircularSuffix_MSD" />
         <item itemvalue="Application.BurrowsWheeler" />
         <item itemvalue="Application.MoveToFront" />
       </list>
@@ -510,7 +511,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759612337745</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Saving the latest. Need to modify the code to check the charAt() for all the strings. A while loop should do it.">
+      <option name="closed" value="true" />
+      <created>1759620163433</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1759620163433</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TodoView">
@@ -574,7 +583,8 @@
     <MESSAGE value="Radix sort works for one column. Need to figure out how many columns I need to do it iteratively. The recursive version does it, but I need to avoid that." />
     <MESSAGE value="Saving the latest." />
     <MESSAGE value="Saving the latest. It looks like iterative version of Radix sort that was described in forums is working." />
-    <option name="LAST_COMMIT_MESSAGE" value="Saving the latest. It looks like iterative version of Radix sort that was described in forums is working." />
+    <MESSAGE value="Saving the latest. Need to modify the code to check the charAt() for all the strings. A while loop should do it." />
+    <option name="LAST_COMMIT_MESSAGE" value="Saving the latest. Need to modify the code to check the charAt() for all the strings. A while loop should do it." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -626,18 +636,29 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/CircularSuffix_MSD.java</url>
-          <line>50</line>
+          <line>62</line>
           <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/MSD.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="41" />
+          <line>50</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/MSD.java</url>
+          <line>109</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <condition expression="d==3" language="JAVA" />
+          <url>file://$PROJECT_DIR$/MSD.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="54" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/MSD.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="49" />
+          <line>98</line>
+          <option name="timeStamp" value="57" />
         </line-breakpoint>
         <breakpoint type="java-exception">
           <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />

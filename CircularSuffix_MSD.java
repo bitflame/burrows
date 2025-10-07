@@ -11,6 +11,18 @@ public class CircularSuffix_MSD {
     private static String str = "ABRACADABRA!";
     private static String[] aux;
 
+    private class CircularSuffix {
+        int start;
+
+        CircularSuffix(int start) {
+            this.start = start;
+        }
+
+        int charAt(int i) {
+            return i > str.length() ? -1 : str.charAt((start + i) % str.length());
+        }
+    }
+
     // modified MSD to take a starting position
     public static void sort(String[] a, int start) {
         int N = a.length;
