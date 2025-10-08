@@ -12,7 +12,7 @@ public class MSD {
     private static int R = 256;
     private static int[] count;
     private static String[] aux;
-    private static int M = 4;
+    private static int M = 3;
 
     private static int charAt(String s, int d) {
         if (d < s.length()) return s.charAt(d);

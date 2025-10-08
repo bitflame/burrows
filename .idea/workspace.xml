@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="Found the cause of sorting issue, which was skipping the suggestion of cuting over to insertion sort. Implmented and tested the insertion sort code provided by this amazing professor.">
+    <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="Added a modification to insertion sort that checks every character in each string to determine which is lexicographically lower, and sort the strings accordingly. It seems to be working.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MSD.java" beforeDir="false" afterPath="$PROJECT_DIR$/MSD.java" afterDir="false" />
     </list>
@@ -526,7 +526,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759864582905</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Added a modification to insertion sort that checks every character in each string to determine which is lexicographically lower, and sort the strings accordingly. It seems to be working.">
+      <option name="closed" value="true" />
+      <created>1759874905330</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1759874905330</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TodoView">
@@ -592,7 +600,8 @@
     <MESSAGE value="Saving the latest. It looks like iterative version of Radix sort that was described in forums is working." />
     <MESSAGE value="Saving the latest. Need to modify the code to check the charAt() for all the strings. A while loop should do it." />
     <MESSAGE value="Found the cause of sorting issue, which was skipping the suggestion of cuting over to insertion sort. Implmented and tested the insertion sort code provided by this amazing professor." />
-    <option name="LAST_COMMIT_MESSAGE" value="Found the cause of sorting issue, which was skipping the suggestion of cuting over to insertion sort. Implmented and tested the insertion sort code provided by this amazing professor." />
+    <MESSAGE value="Added a modification to insertion sort that checks every character in each string to determine which is lexicographically lower, and sort the strings accordingly. It seems to be working." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a modification to insertion sort that checks every character in each string to determine which is lexicographically lower, and sort the strings accordingly. It seems to be working." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -663,12 +672,13 @@
           <line>44</line>
           <option name="timeStamp" value="54" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/MSD.java</url>
           <line>106</line>
           <option name="timeStamp" value="57" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
+          <condition expression="lo==1 &amp;&amp; hi == 5 &amp;&amp; d==1" language="JAVA" />
           <url>file://$PROJECT_DIR$/MSD.java</url>
           <line>59</line>
           <option name="timeStamp" value="59" />
