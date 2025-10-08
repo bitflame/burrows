@@ -60,6 +60,7 @@ public class MSD {
         for (int r = 0; r < R; r++) {
             System.out.printf("d: %d lo: %d hi: %d\n", d, lo, hi);
             sort(a, aux, lo + count[r], lo + count[r + 1] - 1, d + 1);
+
         }
 
     }

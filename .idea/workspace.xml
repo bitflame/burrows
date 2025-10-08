@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="Added a modification to insertion sort that checks every character in each string to determine which is lexicographically lower, and sort the strings accordingly. It seems to be working. But downstream characters are not sorted yet." />
+    <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="Saving the latest." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -547,7 +547,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759935620298</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Saving the latest.">
+      <option name="closed" value="true" />
+      <created>1759938626047</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1759938626047</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TodoView">
@@ -609,13 +617,13 @@
     <MESSAGE value="Stored the characters and the indices in a symbol table. Then just used the iterator to print them in the sorted order of the keys/indices." />
     <MESSAGE value="Saving the latest" />
     <MESSAGE value="Radix sort works for one column. Need to figure out how many columns I need to do it iteratively. The recursive version does it, but I need to avoid that." />
-    <MESSAGE value="Saving the latest." />
     <MESSAGE value="Saving the latest. It looks like iterative version of Radix sort that was described in forums is working." />
     <MESSAGE value="Saving the latest. Need to modify the code to check the charAt() for all the strings. A while loop should do it." />
     <MESSAGE value="Found the cause of sorting issue, which was skipping the suggestion of cuting over to insertion sort. Implmented and tested the insertion sort code provided by this amazing professor." />
     <MESSAGE value="Added a modification to insertion sort that checks every character in each string to determine which is lexicographically lower, and sort the strings accordingly. It seems to be working." />
     <MESSAGE value="Added a modification to insertion sort that checks every character in each string to determine which is lexicographically lower, and sort the strings accordingly. It seems to be working. But downstream characters are not sorted yet." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a modification to insertion sort that checks every character in each string to determine which is lexicographically lower, and sort the strings accordingly. It seems to be working. But downstream characters are not sorted yet." />
+    <MESSAGE value="Saving the latest." />
+    <option name="LAST_COMMIT_MESSAGE" value="Saving the latest." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -677,7 +685,7 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/MSD.java</url>
-          <line>132</line>
+          <line>118</line>
           <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
@@ -687,12 +695,12 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/MSD.java</url>
-          <line>121</line>
+          <line>107</line>
           <option name="timeStamp" value="57" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/MSD.java</url>
-          <line>74</line>
+          <line>60</line>
           <option name="timeStamp" value="59" />
         </line-breakpoint>
         <breakpoint type="java-exception">
