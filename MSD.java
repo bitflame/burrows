@@ -12,7 +12,7 @@ public class MSD {
     private static int R = 256;
     private static int[] count;
     private static String[] aux;
-    private static int M = 3;
+    private static int M = 0;
 
     private static int charAt(String s, int d) {
         if (d < s.length()) return s.charAt(d);
@@ -52,6 +52,21 @@ public class MSD {
 
         for (int i = lo; i <= hi; i++)
             aux[count[charAt(a[i], d) + 1]++] = a[i];
+        // for each string in aux go up to high and make sure the strings are sorted, and if not, sort them.
+        int indexOfCurrentChar = d + 1;
+        String temp = "";
+        for (int i = lo; i < hi; i++) {
+            for (int j = 0; j < a.length; j++) {
+                if (aux[i + 1].charAt(indexOfCurrentChar) < aux[i].charAt(indexOfCurrentChar)) {
+                    temp = aux[i];
+                    aux[i] = aux[i + 1];
+                    aux[i + 1] = temp;
+                    j
+                            = a.length; // once I do this, I need move on the the next string and not check any
+                    // of the downstream characters
+                }
+            }
+        }
 
         for (int i = lo; i <= hi; i++)
             a[i] = aux[i - lo];
