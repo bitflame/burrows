@@ -4,29 +4,35 @@
  *  Description:
  **************************************************************************** */
 
+import edu.princeton.cs.algs4.Alphabet;
 import edu.princeton.cs.algs4.Insertion;
 
 import java.util.Comparator;
 
 public class MSD {
-    private static int R = 256;
+    Alphabet alphabet = Alphabet.LOWERCASE;
+    private static int R;
     private static int[] count;
     private static String[] aux;
     private static int M = 0;
 
-    private static int charAt(String s, int d) {
-        if (d < s.length()) return s.charAt(d);
+    private int charAt(String s, int d) {
+        // if (d < s.length()) return s.charAt(d);
+        if (d < s.length()) return alphabet.toIndex(s.charAt(d));
         else return -1;
     }
 
     private void sort(String[] a) {
         aux = new String[a.length];
+        R = alphabet.radix();
+
         sort(a, aux, 0, a.length - 1, 0);
     }
 
     // todo - this is not soring right, the code never runs for lo = 6, hi=7 and d=3
-    private static void sort(String[] a, String[] aux, int lo, int hi, int d) {
+    private void sort(String[] a, String[] aux, int lo, int hi, int d) {
 
+        System.out.printf("lo: %d hi: %d d: %d\n", lo, hi, d);
         if (hi <= lo + M) {
 
             sort(a, lo, hi, d);
@@ -58,14 +64,14 @@ public class MSD {
             a[i] = aux[i - lo];
 
         for (int r = 0; r < R; r++) {
-            System.out.printf("d: %d lo: %d hi: %d\n", d, lo, hi);
+            // System.out.printf("d: %d lo: %d hi: %d\n", d, lo, hi);
             sort(a, aux, lo + count[r], lo + count[r + 1] - 1, d + 1);
 
         }
 
     }
 
-    private static void sort(String[] a, int lo, int hi, int d) {
+    private void sort(String[] a, int lo, int hi, int d) {
         for (int i = lo; i <= hi; i++) {
             for (int j = i; j > lo && less(a[j], a[j - 1], d); j--) {
                 exch(a, j, j - 1);
@@ -73,7 +79,7 @@ public class MSD {
         }
     }
 
-    private static boolean less(String v, String w, int d) {
+    private boolean less(String v, String w, int d) {
         for (int i = 0; i <= d; i++) {
             if (v.charAt(i) < w.charAt(i)) return true;
         }
@@ -81,7 +87,7 @@ public class MSD {
         return false;
     }
 
-    private static void exch(Comparable[] a, int i, int j) {
+    private void exch(Comparable[] a, int i, int j) {
         Comparable t = a[i];
         a[i] = a[j];
         a[j] = t;
@@ -105,19 +111,19 @@ public class MSD {
         for (String s : my_tests) {
             System.out.println(s);
         }
+        MSD msd = new MSD();
         /*          My own insertion sort                    */
         System.out.printf("This is the resulf of my own sort\n");
-        sort(my_tests, 0, my_tests.length - 1, d);
+        msd.sort(my_tests, 0, my_tests.length - 1, d);
         for (String s : my_tests) {
             System.out.println(s);
         }
-        MSD msd = new MSD();
         String randomString
-                = "she sells seashells by the seashore the shells she sells are surely seashells";
+                = "she sells seashells by the sea shore the shells she sells are surely seashells";
         String stringTwo
                 = "ABRACADABRA! BRACADABRA!A RACADABRA!AB ACADABRA!ABR CADABRA!ABRA ADABRA!ABRAC DABRA!ABRACA ABRA!ABRACAD BRA!ABRACADA RA!ABRACADAB A!ABRACADABR !ABRACADABRA";
-        String[] original = stringTwo.split(" ");
-        String[] a = stringTwo.split(" ");
+        String[] original = randomString.split(" ");
+        String[] a = randomString.split(" ");
 
         msd.sort(a);
 
