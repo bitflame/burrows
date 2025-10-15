@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="Changed the MSD implementation to see if I get the same recursive calls that are on page 714, and I do." />
+    <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="Moved the latest CircularSuffixArray implementation, but need to update it to have the methods stated in the specification.">
+      <change beforePath="$PROJECT_DIR$/CircularSuffixArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/CircularSuffixArray.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -104,23 +106,23 @@
     <option name="sortByType" value="true" />
     <option name="sortKey" value="BY_TYPE" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.BurrowsWheeler.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.CircularSuffixArray.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.CircularSuffix_MSD.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.MSD.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.MoveToFront.executor&quot;: &quot;Run&quot;,
-    &quot;Attach to process.localhost:5005.executor&quot;: &quot;ProcessAttachDebug&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Test&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/firoozyasin/IdeaProjects/burrows&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.BurrowsWheeler.executor": "Debug",
+    "Application.CircularSuffixArray.executor": "Run",
+    "Application.CircularSuffix_MSD.executor": "Debug",
+    "Application.MSD.executor": "Debug",
+    "Application.MoveToFront.executor": "Run",
+    "Attach to process.localhost:5005.executor": "ProcessAttachDebug",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "Test",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/firoozyasin/IdeaProjects/burrows"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.CircularSuffixArray">
     <configuration name="BurrowsWheeler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BurrowsWheeler" />
@@ -571,7 +573,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760390330752</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Moved the latest CircularSuffixArray implementation, but need to update it to have the methods stated in the specification.">
+      <option name="closed" value="true" />
+      <created>1760553633974</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1760553633974</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TodoView">
@@ -640,19 +650,20 @@
     <MESSAGE value="Added a modification to insertion sort that checks every character in each string to determine which is lexicographically lower, and sort the strings accordingly. It seems to be working. But downstream characters are not sorted yet." />
     <MESSAGE value="Saving the latest." />
     <MESSAGE value="Changed the MSD implementation to see if I get the same recursive calls that are on page 714, and I do." />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed the MSD implementation to see if I get the same recursive calls that are on page 714, and I do." />
+    <MESSAGE value="Moved the latest CircularSuffixArray implementation, but need to update it to have the methods stated in the specification." />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved the latest CircularSuffixArray implementation, but need to update it to have the methods stated in the specification." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/CircularSuffixArray.java</url>
-          <line>34</line>
+          <line>24</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/CircularSuffixArray.java</url>
-          <line>26</line>
+          <line>20</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -677,7 +688,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/CircularSuffixArray.java</url>
-          <line>71</line>
+          <line>110</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

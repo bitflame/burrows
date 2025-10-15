@@ -134,6 +134,16 @@ public class CircularSuffixArray {
         }
     }
 
+    // returns the index of ith sorted suffix
+    public int index(int i) {
+        return suffixes[i].start;
+    }
+
+    // length of s
+    public int length() {
+        return N;
+    }
+
     private static void sort(CircularSuffix[] a, int lo, int hi, int d, int offset) {
         count = new int[R + 2];
         char c;
