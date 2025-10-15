@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="Saving the latest.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MSD.java" beforeDir="false" afterPath="$PROJECT_DIR$/MSD.java" afterDir="false" />
-    </list>
+    <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="Changed the MSD implementation to see if I get the same recursive calls that are on page 714, and I do." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -124,7 +121,7 @@
     &quot;last_opened_file_path&quot;: &quot;/home/firoozyasin/IdeaProjects/burrows&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.MSD">
+  <component name="RunManager" selected="Application.CircularSuffixArray">
     <configuration name="BurrowsWheeler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BurrowsWheeler" />
       <module name="Algorithms, Part II" />
@@ -174,8 +171,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MSD" />
         <item itemvalue="Application.CircularSuffixArray" />
+        <item itemvalue="Application.MSD" />
         <item itemvalue="Application.CircularSuffix_MSD" />
         <item itemvalue="Application.BurrowsWheeler" />
         <item itemvalue="Application.MoveToFront" />
@@ -566,7 +563,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759941662320</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Changed the MSD implementation to see if I get the same recursive calls that are on page 714, and I do.">
+      <option name="closed" value="true" />
+      <created>1760390330752</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1760390330752</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TodoView">
@@ -634,7 +639,8 @@
     <MESSAGE value="Added a modification to insertion sort that checks every character in each string to determine which is lexicographically lower, and sort the strings accordingly. It seems to be working." />
     <MESSAGE value="Added a modification to insertion sort that checks every character in each string to determine which is lexicographically lower, and sort the strings accordingly. It seems to be working. But downstream characters are not sorted yet." />
     <MESSAGE value="Saving the latest." />
-    <option name="LAST_COMMIT_MESSAGE" value="Saving the latest." />
+    <MESSAGE value="Changed the MSD implementation to see if I get the same recursive calls that are on page 714, and I do." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed the MSD implementation to see if I get the same recursive calls that are on page 714, and I do." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
