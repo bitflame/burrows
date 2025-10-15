@@ -25,7 +25,9 @@ public class CircularSuffixArray {
         countFrequencies = new int[N];
         int lo = 0, hi = N
                 - 1; // d: column being considered from lo: the first string to hi: the last string
-        System.out.printf("line 29 message: lo: %d, hi: %d d: %d offset: %d \n", lo, hi, d, offset);
+        System.out.printf(
+                "line 29 messareturn super.toString();ge: lo: %d, hi: %d d: %d offset: %d \n", lo,
+                hi, d, offset);
         sort(suffixes, lo, hi, d, 0);
         while (countFrequencies[generalCounter] != 0) {
             lo = lo + countFrequencies[generalCounter];
@@ -190,6 +192,9 @@ public class CircularSuffixArray {
         String str = "ABRACADABRA!";
         int N = str.length();
         CircularSuffixArray circularSuffixArray = new CircularSuffixArray(str);
+        for (int i = 0; i < N; i++) {
+            System.out.println(suffixes[i].start);
+        }
     }
 }
 
