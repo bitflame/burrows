@@ -1,8 +1,5 @@
-/* *****************************************************************************
- *  Name:
- *  Date:
- *  Description:
- **************************************************************************** */
+import edu.princeton.cs.algs4.BinaryStdIn;
+import edu.princeton.cs.algs4.BinaryStdOut;
 
 public class BurrowsWheeler {
     // apply Burrows-Wheeler transform,
@@ -17,18 +14,19 @@ public class BurrowsWheeler {
     private static int first;
 
     public static void transform() {
-        String s = "ABRACADABRA!";
-        N = s.length();
+        String str = BinaryStdIn.readString();
+        CircularSuffixArray circularSuffixArray = new CircularSuffixArray(str);
+        N = str.length();
         t = new char[N];
-        CircularSuffixArray circularSuffixArray = new CircularSuffixArray(s);
-        int tempIndex = 0;
-        for (int i = N - 1; i >= 0; i--) {
-            if (circularSuffixArray.index(i) == 0) first = i;
-            t[tempIndex++] = s.charAt(i);
-        }
         for (int i = 0; i < N; i++) {
-            System.out.printf("%c ", t[i]);
+            if (circularSuffixArray.index(i) == 0) first = i;
         }
+        BinaryStdOut.write(first);
+        CircularSuffixArray.CircularSuffix currentSuffix;
+        for (int i = 0; i < N; i++) {
+            BinaryStdOut.write((char) str.charAt(circularSuffixArray.index(i)));
+        }
+        BinaryStdOut.close();
     }
 
     // apply Burrows-Wheeler inverse transform,
@@ -60,7 +58,7 @@ public class BurrowsWheeler {
     // if args[0] is "-", apply Burrows-Wheeler transform
     // if args[0] is "+", apply Burrows-Wheeler inverse transform
     public static void main(String[] args) {
-        transform();
-        inverseTransform();
+        if (args[0].equals("-")) transform();
+        // inverseTransform();
     }
 }

@@ -1,9 +1,3 @@
-/* *****************************************************************************
- *  Name:
- *  Date:
- *  Description:
- **************************************************************************** */
-
 public class CircularSuffix_MSD {
     private static int start;
     private static int R = 256;

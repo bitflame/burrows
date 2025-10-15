@@ -1,9 +1,3 @@
-/* *****************************************************************************
- *  Name: Shahin M. Ansari
- *  Date: 09-26-25
- *  Description: Burrows-Wheeler encoding implementation
- **************************************************************************** */
-
 import edu.princeton.cs.algs4.BinaryStdIn;
 import edu.princeton.cs.algs4.BinaryStdOut;
 
