@@ -8,17 +8,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BurrowsWheeler.class" beforeDir="false" afterPath="$PROJECT_DIR$/BurrowsWheeler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BurrowsWheeler.java" beforeDir="false" afterPath="$PROJECT_DIR$/BurrowsWheeler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CircularSuffixArray$CircularSuffix.class" beforeDir="false" afterPath="$PROJECT_DIR$/CircularSuffixArray$CircularSuffix.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CircularSuffixArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/CircularSuffixArray.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CircularSuffixArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/CircularSuffixArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CircularSuffix_MSD$CircularSuffix.class" beforeDir="false" afterPath="$PROJECT_DIR$/CircularSuffix_MSD$CircularSuffix.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CircularSuffix_MSD.class" beforeDir="false" afterPath="$PROJECT_DIR$/CircularSuffix_MSD.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CircularSuffix_MSD.java" beforeDir="false" afterPath="$PROJECT_DIR$/CircularSuffix_MSD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MSD$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/MSD$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MSD.class" beforeDir="false" afterPath="$PROJECT_DIR$/MSD.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoveToFront.class" beforeDir="false" afterPath="$PROJECT_DIR$/MoveToFront.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoveToFront.java" beforeDir="false" afterPath="$PROJECT_DIR$/MoveToFront.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sandbox.class" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +60,16 @@
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/bitflame/burrows.git&quot;,
     &quot;accountId&quot;: &quot;4c3cf077-02df-452e-ac8a-0b659d034667&quot;
+  },
+  &quot;recentNewPullRequestHead&quot;: {
+    &quot;server&quot;: {
+      &quot;useHttp&quot;: false,
+      &quot;host&quot;: &quot;github.com&quot;,
+      &quot;port&quot;: null,
+      &quot;suffix&quot;: null
+    },
+    &quot;owner&quot;: &quot;bitflame&quot;,
+    &quot;repository&quot;: &quot;burrows&quot;
   }
 }</component>
   <component name="OptimizeOnSaveOptions">
@@ -119,27 +118,27 @@
     <option name="sortByType" value="true" />
     <option name="sortKey" value="BY_TYPE" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.BurrowsWheeler.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.CircularSuffixArray.executor&quot;: &quot;Run&quot;,
-    &quot;Application.CircularSuffix_MSD.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.MSD.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.MoveToFront.executor&quot;: &quot;Run&quot;,
-    &quot;Attach to process.localhost:5005.executor&quot;: &quot;ProcessAttachDebug&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Test&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/firoozyasin/IdeaProjects/burrows&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.BurrowsWheeler.executor": "Run",
+    "Application.CircularSuffixArray.executor": "Run",
+    "Application.CircularSuffix_MSD.executor": "Debug",
+    "Application.MSD.executor": "Debug",
+    "Application.MoveToFront.executor": "Run",
+    "Attach to process.localhost:5005.executor": "ProcessAttachDebug",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "Test",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/firoozyasin/IdeaProjects/burrows",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
-  <component name="RunManager" selected="Application.CircularSuffixArray">
+}]]></component>
+  <component name="RunManager" selected="Application.BurrowsWheeler">
     <configuration name="BurrowsWheeler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BurrowsWheeler" />
       <module name="Algorithms, Part II" />
@@ -179,16 +178,16 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.BurrowsWheeler" />
       <item itemvalue="Application.CircularSuffixArray" />
+      <item itemvalue="Application.BurrowsWheeler" />
       <item itemvalue="Application.CircularSuffix_MSD" />
       <item itemvalue="Application.MSD" />
       <item itemvalue="Application.MoveToFront" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CircularSuffixArray" />
         <item itemvalue="Application.BurrowsWheeler" />
+        <item itemvalue="Application.CircularSuffixArray" />
         <item itemvalue="Application.MSD" />
         <item itemvalue="Application.CircularSuffix_MSD" />
         <item itemvalue="Application.MoveToFront" />
@@ -202,14 +201,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1758825120747</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Saving the latest">
-      <option name="closed" value="true" />
-      <created>1758982375726</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1758982375726</updated>
     </task>
     <task id="LOCAL-00005" summary="Saving the latest">
       <option name="closed" value="true" />
@@ -595,7 +586,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760554237499</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Saving the latest.">
+      <option name="closed" value="true" />
+      <created>1760566932409</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1760566932409</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TodoView">
@@ -662,11 +661,11 @@
     <MESSAGE value="Found the cause of sorting issue, which was skipping the suggestion of cuting over to insertion sort. Implmented and tested the insertion sort code provided by this amazing professor." />
     <MESSAGE value="Added a modification to insertion sort that checks every character in each string to determine which is lexicographically lower, and sort the strings accordingly. It seems to be working." />
     <MESSAGE value="Added a modification to insertion sort that checks every character in each string to determine which is lexicographically lower, and sort the strings accordingly. It seems to be working. But downstream characters are not sorted yet." />
-    <MESSAGE value="Saving the latest." />
     <MESSAGE value="Changed the MSD implementation to see if I get the same recursive calls that are on page 714, and I do." />
     <MESSAGE value="Moved the latest CircularSuffixArray implementation, but need to update it to have the methods stated in the specification." />
     <MESSAGE value="Saving a minor update." />
-    <option name="LAST_COMMIT_MESSAGE" value="Saving a minor update." />
+    <MESSAGE value="Saving the latest." />
+    <option name="LAST_COMMIT_MESSAGE" value="Saving the latest." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -700,11 +699,6 @@
           <url>file://$PROJECT_DIR$/MoveToFront.java</url>
           <line>15</line>
           <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/BurrowsWheeler.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/BurrowsWheeler.java</url>
@@ -743,7 +737,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/BurrowsWheeler.java</url>
-          <line>60</line>
+          <line>42</line>
           <option name="timeStamp" value="64" />
         </line-breakpoint>
         <breakpoint type="java-exception">
