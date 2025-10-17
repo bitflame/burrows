@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="Saving the latest.">
+    <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="Saving the latest. Inverse Transform is working.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BurrowsWheeler.java" beforeDir="false" afterPath="$PROJECT_DIR$/BurrowsWheeler.java" afterDir="false" />
     </list>
@@ -117,26 +117,26 @@
     <option name="sortByType" value="true" />
     <option name="sortKey" value="BY_TYPE" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.BurrowsWheeler.executor": "Run",
-    "Application.CircularSuffixArray.executor": "Run",
-    "Application.CircularSuffix_MSD.executor": "Debug",
-    "Application.MSD.executor": "Debug",
-    "Application.MoveToFront.executor": "Run",
-    "Attach to process.localhost:5005.executor": "ProcessAttachDebug",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "#1 on Test",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/firoozyasin/IdeaProjects/burrows",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.BurrowsWheeler.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CircularSuffixArray.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CircularSuffix_MSD.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.MSD.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.MoveToFront.executor&quot;: &quot;Run&quot;,
+    &quot;Attach to process.localhost:5005.executor&quot;: &quot;ProcessAttachDebug&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;#1 on Test&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/firoozyasin/IdeaProjects/burrows&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.BurrowsWheeler">
     <configuration name="BurrowsWheeler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BurrowsWheeler" />
@@ -200,14 +200,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1758825120747</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Saving the latest">
-      <option name="closed" value="true" />
-      <created>1758999456787</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1758999456787</updated>
     </task>
     <task id="LOCAL-00007" summary="Saving the latest">
       <option name="closed" value="true" />
@@ -593,7 +585,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760631236499</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Saving the latest. Inverse Transform is working.">
+      <option name="closed" value="true" />
+      <created>1760738235527</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1760738235527</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TodoView">
@@ -664,7 +664,8 @@
     <MESSAGE value="Moved the latest CircularSuffixArray implementation, but need to update it to have the methods stated in the specification." />
     <MESSAGE value="Saving a minor update." />
     <MESSAGE value="Saving the latest." />
-    <option name="LAST_COMMIT_MESSAGE" value="Saving the latest." />
+    <MESSAGE value="Saving the latest. Inverse Transform is working." />
+    <option name="LAST_COMMIT_MESSAGE" value="Saving the latest. Inverse Transform is working." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -736,7 +737,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/BurrowsWheeler.java</url>
-          <line>50</line>
+          <line>65</line>
           <option name="timeStamp" value="64" />
         </line-breakpoint>
         <breakpoint type="java-exception">

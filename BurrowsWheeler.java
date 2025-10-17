@@ -32,9 +32,9 @@ public class BurrowsWheeler {
     // apply Burrows-Wheeler inverse transform,
     // reading from standard input and writing to standard output
     public static void inverseTransform() {
-        String t = "ARD!RCAAAABB";
+        int first = BinaryStdIn.readInt();
+        String t = BinaryStdIn.readString();
         char[] a = t.toCharArray();
-        int first = 3;
         int N = t.length();
         char[] aux = new char[N];
         int[] count = new int[R + 1];
@@ -53,9 +53,11 @@ public class BurrowsWheeler {
 
         for (int j = 0; j < next.length; j++) {
             first = next[first];
-            System.out.printf("%c ", t.charAt(first));
+            // System.out.printf("%c ", t.charAt(first));
+            BinaryStdOut.write(t.charAt(first));
         }
-        System.out.println();
+        // System.out.println();
+        BinaryStdOut.close();
     }
 
     // if args[0] is "-", apply Burrows-Wheeler transform
