@@ -32,9 +32,30 @@ public class BurrowsWheeler {
     // apply Burrows-Wheeler inverse transform,
     // reading from standard input and writing to standard output
     public static void inverseTransform() {
-        // read in an integer and a string, loop through the string and set
-        // next[] to the index of str.chartAt(0) == ! i.e. the string that
-        // starts with the character you are looking at - The first instance of it
+        String t = "ARD!RCAAAABB";
+        char[] a = t.toCharArray();
+        int first = 3;
+        int N = t.length();
+        char[] aux = new char[N];
+        int[] count = new int[R + 1];
+
+        for (int i = 0; i < N; i++) {
+            count[a[i] + 1]++;
+        }
+        for (int r = 0; r < R; r++) {
+            count[r + 1] += count[r];
+        }
+        int[] next = new int[N];
+        for (int i = 0; i < N; i++) {
+            aux[count[a[i]]++] = a[i];
+            next[count[a[i]] - 1] = i;
+        }
+
+        for (int j = 0; j < next.length; j++) {
+            first = next[first];
+            System.out.printf("%c ", t.charAt(first));
+        }
+        System.out.println();
     }
 
     // if args[0] is "-", apply Burrows-Wheeler transform
