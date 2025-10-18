@@ -33,8 +33,8 @@ public class MoveToFront {
 
     private static void updateActiveStringIndex(char currentChar) {
         // find the current index of the character, and move the down stream character to the current location
-        if (currentChar > 0) {
-            int index = activeStringIndex(currentChar);
+        int index = activeStringIndex(currentChar);
+        if (index > 0 && currentChar > 0) {
             do {
                 shift(index - 1, index);
                 index--;
