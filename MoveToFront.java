@@ -45,7 +45,7 @@ public class MoveToFront {
 
     // apply move-to-front decoding, reading from standard input and writing to standard output
     public static void decode() {
-        System.out.println("Decoding.");
+        // System.out.println("Decoding.");
         defaultList = new char[R];
         for (int i = 0; i < R; i++) {
             defaultList[i] = (char) i;
