@@ -118,7 +118,7 @@ public class CircularSuffixArray {
         return c1.charAt(d) < c2.charAt(d);
     }
 
-    static class CircularSuffix {
+    private static class CircularSuffix {
         int start;
         String str;
 

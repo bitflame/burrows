@@ -4,7 +4,7 @@ import edu.princeton.cs.algs4.BinaryStdOut;
 public class MoveToFront {
     private static final int R = 256;
     private static char[] defaultList;
-    static int relevantBits = 8;
+    private static int relevantBits = 8;
 
     // apply move-to-front encoding, reading from standard input and writing to standard output
     public static void encode() {

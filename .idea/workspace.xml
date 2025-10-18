@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="Added a script for rapid testing and worked on minor bugs in it">
+    <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="Addressed a minor bug with MoveToFront, and ran the script successfully.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BurrowsWheeler.class" beforeDir="false" afterPath="$PROJECT_DIR$/BurrowsWheeler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BurrowsWheeler.java" beforeDir="false" afterPath="$PROJECT_DIR$/BurrowsWheeler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CircularSuffixArray$CircularSuffix.class" beforeDir="false" afterPath="$PROJECT_DIR$/CircularSuffixArray$CircularSuffix.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CircularSuffixArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/CircularSuffixArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CircularSuffixArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/CircularSuffixArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MoveToFront.class" beforeDir="false" afterPath="$PROJECT_DIR$/MoveToFront.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MoveToFront.java" beforeDir="false" afterPath="$PROJECT_DIR$/MoveToFront.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,14 +206,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1758825120747</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Saving the latest.">
-      <option name="closed" value="true" />
-      <created>1759076010171</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1759076010171</updated>
     </task>
     <task id="LOCAL-00011" summary="Need to make sure index[], next[], and t[] populate with the right values.">
       <option name="closed" value="true" />
@@ -592,7 +591,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760812678574</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Addressed a minor bug with MoveToFront, and ran the script successfully.">
+      <option name="closed" value="true" />
+      <created>1760816014238</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1760816014239</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TodoView">
@@ -666,7 +673,8 @@
     <MESSAGE value="Saving the latest. Inverse Transform is working." />
     <MESSAGE value="Saving the latest. Both Transform, and Inverse Transform are working." />
     <MESSAGE value="Added a script for rapid testing and worked on minor bugs in it" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a script for rapid testing and worked on minor bugs in it" />
+    <MESSAGE value="Addressed a minor bug with MoveToFront, and ran the script successfully." />
+    <option name="LAST_COMMIT_MESSAGE" value="Addressed a minor bug with MoveToFront, and ran the script successfully." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -686,20 +694,10 @@
           <line>47</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/MoveToFront.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/MoveToFront.java</url>
           <line>62</line>
           <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/MoveToFront.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/BurrowsWheeler.java</url>
@@ -738,7 +736,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/BurrowsWheeler.java</url>
-          <line>67</line>
+          <line>66</line>
           <option name="timeStamp" value="64" />
         </line-breakpoint>
         <breakpoint type="java-exception">
