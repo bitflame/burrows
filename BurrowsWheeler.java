@@ -24,7 +24,9 @@ public class BurrowsWheeler {
         BinaryStdOut.write(first);
         CircularSuffixArray.CircularSuffix currentSuffix;
         for (int i = 0; i < N; i++) {
-            BinaryStdOut.write((char) str.charAt(circularSuffixArray.index(i)));
+            if (circularSuffixArray.index(i) == 0)
+                BinaryStdOut.write(str.charAt(circularSuffixArray.index(i) + N - 1));
+            else BinaryStdOut.write(str.charAt(circularSuffixArray.index(i) - 1));
         }
         BinaryStdOut.close();
     }

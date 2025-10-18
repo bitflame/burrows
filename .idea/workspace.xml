@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="Saving the latest. Inverse Transform is working.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BurrowsWheeler.class" beforeDir="false" afterPath="$PROJECT_DIR$/BurrowsWheeler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BurrowsWheeler.java" beforeDir="false" afterPath="$PROJECT_DIR$/BurrowsWheeler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -737,7 +738,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/BurrowsWheeler.java</url>
-          <line>65</line>
+          <line>67</line>
           <option name="timeStamp" value="64" />
         </line-breakpoint>
         <breakpoint type="java-exception">
