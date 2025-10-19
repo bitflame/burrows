@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="made CircularSuffix private">
+    <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="Fixed a number bugs and an error for the staring BANANA. Is sorts fine now.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BurrowsWheeler.class" beforeDir="false" afterPath="$PROJECT_DIR$/BurrowsWheeler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CircularSuffixArray$CircularSuffix.class" beforeDir="false" afterPath="$PROJECT_DIR$/CircularSuffixArray$CircularSuffix.class" afterDir="false" />
@@ -209,14 +209,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1758825120747</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Need to make sure index[], next[], and t[] populate with the right values.">
-      <option name="closed" value="true" />
-      <created>1759092671820</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1759092671820</updated>
     </task>
     <task id="LOCAL-00013" summary="Need to make sure index[], next[], and t[] populate with the right values.">
       <option name="closed" value="true" />
@@ -602,7 +594,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760820220801</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="Fixed a number bugs and an error for the staring BANANA. Is sorts fine now.">
+      <option name="closed" value="true" />
+      <created>1760910271877</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1760910271877</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TodoView">
@@ -653,7 +653,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Saving the latest. Circular suffix seems to be working." />
     <MESSAGE value="Need to make sure index[], next[], and t[] populate with the right values." />
     <MESSAGE value="Saving what I have before making drastic changes based on new insight." />
     <MESSAGE value="Saving the latest changes" />
@@ -678,19 +677,20 @@
     <MESSAGE value="Added a script for rapid testing and worked on minor bugs in it" />
     <MESSAGE value="Addressed a minor bug with MoveToFront, and ran the script successfully." />
     <MESSAGE value="made CircularSuffix private" />
-    <option name="LAST_COMMIT_MESSAGE" value="made CircularSuffix private" />
+    <MESSAGE value="Fixed a number bugs and an error for the staring BANANA. Is sorts fine now." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed a number bugs and an error for the staring BANANA. Is sorts fine now." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/CircularSuffixArray.java</url>
-          <line>26</line>
+          <line>27</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/CircularSuffixArray.java</url>
-          <line>22</line>
+          <line>23</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -742,6 +742,11 @@
           <url>file://$PROJECT_DIR$/BurrowsWheeler.java</url>
           <line>66</line>
           <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/CircularSuffixArray.java</url>
+          <line>219</line>
+          <option name="timeStamp" value="65" />
         </line-breakpoint>
         <breakpoint type="java-exception">
           <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
