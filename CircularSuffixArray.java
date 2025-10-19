@@ -15,7 +15,7 @@ public class CircularSuffixArray {
         if (s == null) throw new IllegalArgumentException(
                 "The strings passed to this method should not be null.");
         countFrequenciesCounter = 0;
-        this.s = s;
+        s = s;
         N = s.length();
         suffixes = new CircularSuffix[s.length()];
         for (int i = 0; i < N; i++) {
@@ -31,6 +31,8 @@ public class CircularSuffixArray {
         //         "line 29 messareturn super.toString();ge: lo: %d, hi: %d d: %d offset: %d \n", lo,
         //         hi, d, offset);
         sort(suffixes, lo, hi, d, 0);
+        hi = countFrequencies[0] - 1;
+        if (hi > lo) sortMatchingStrings(lo, hi, d);
         while (countFrequencies[generalCounter] != 0) {
             lo = lo + countFrequencies[generalCounter];
             hi = lo + countFrequencies[generalCounter + 1] - 1;
@@ -39,53 +41,70 @@ public class CircularSuffixArray {
         }
     }
 
+    private static int[] arrayResize(int[] countFreq, int currentSize, int newSize) {
+        int[] newCountFreqArray = new int[newSize];
+        for (int i = 0; i < countFreq.length; i++) {
+            newCountFreqArray[i] = countFreq[i];
+        }
+        return newCountFreqArray;
+    }
+
     private void sortMatchingStrings(int lo, int hi, int d) {
         // returns the values for offset, matchingLo, matchingHi, and count of the region with matching characters
         // for the current column referred to by d
         int startOfMatch = lo, endOfMatch = lo, currentIndex = lo, localOffset
                 = 0; // matching hi starts at lo and increases
-        offset = d;
+        offset = 0;
         boolean foundRowsWithMatchingCharacters = true;
         currentIndex = lo;
         while (foundRowsWithMatchingCharacters) {
             foundRowsWithMatchingCharacters = false;
             while (currentIndex < hi) {
                 if (currentIndex <= hi
-                        && suffixes[currentIndex].charAt(offset + localOffset) == suffixes[
-                        currentIndex + 1].charAt(offset + localOffset)) {
+                        && suffixes[currentIndex].charAt(offset + d) == suffixes[
+                        currentIndex + 1].charAt(offset + d)) {
                     startOfMatch = currentIndex;
                     foundRowsWithMatchingCharacters = true;
                     while (currentIndex < hi
-                            && suffixes[currentIndex].charAt(offset + localOffset) == suffixes[
-                            currentIndex + 1].charAt(offset + localOffset)) {
+                            && suffixes[currentIndex].charAt(offset + d) == suffixes[
+                            currentIndex + 1].charAt(offset + d)) {
                         currentIndex++;
                     }
-                    localOffset++;
+                    localOffset = offset + 1;
                     endOfMatch = currentIndex;
                     int temp = startOfMatch;
                     // can I add another col? temp is just a temporary variable poiting to each line instead of currentIndex
-                    while (suffixes[startOfMatch].charAt(offset + localOffset) == suffixes[
-                            startOfMatch + 1].charAt(offset + localOffset) && temp <= endOfMatch) {
+                    while (suffixes[temp].charAt(d + localOffset) == suffixes[
+                            temp + 1].charAt(d + localOffset) && temp <= endOfMatch) {
                         while (temp < endOfMatch
-                                && suffixes[temp].charAt(offset + localOffset) == suffixes[temp
-                                + 1].charAt(offset + localOffset)) {
+                                && suffixes[temp].charAt(d + localOffset) == suffixes[temp
+                                + 1].charAt(d + localOffset)) {
                             temp++;
                         }
-                        localOffset++;
                         if (temp == endOfMatch
-                                && suffixes[startOfMatch].charAt(offset + localOffset) == suffixes[
-                                startOfMatch + 1].charAt(offset + localOffset)) {
+                                && suffixes[startOfMatch].charAt(d + localOffset) == suffixes[
+                                startOfMatch + 1].charAt(d + localOffset)) {
                             temp = startOfMatch;
+                            localOffset++;
                         }
                     }
-                    if (startOfMatch - endOfMatch > RADIX_SORT_CUTOFF)
+                    offset++;
+                    if (localOffset > offset) offset = localOffset;
+                    if (startOfMatch - endOfMatch > RADIX_SORT_CUTOFF) {
                         sort(suffixes, startOfMatch, endOfMatch, offset, localOffset);
-                    else insertionSortForCircSuffixArray(suffixes, startOfMatch, endOfMatch, offset,
-                                                         localOffset);
+                        foundRowsWithMatchingCharacters = false;
+                    }
+                    else {
+                        insertionSortForCircSuffixArray(suffixes, startOfMatch, endOfMatch, offset,
+                                                        localOffset);
+                        foundRowsWithMatchingCharacters = false;
+                    }
+
                 }
                 currentIndex++;
             }
             currentIndex = lo;
+            offset++;
         }
     }
 
@@ -158,6 +177,9 @@ public class CircularSuffixArray {
             if (count[i] > 0) {
                 countFrequencies[countFrequenciesCounter] = count[i];
                 countFrequenciesCounter++;
+                if (countFrequenciesCounter * 2 > countFrequencies.length)
+                    countFrequencies = arrayResize(countFrequencies, countFrequencies.length,
+                                                   countFrequencies.length * 2);
             }
         }
 

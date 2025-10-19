@@ -4,15 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="Addressed a minor bug with MoveToFront, and ran the script successfully.">
+    <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="made CircularSuffix private">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BurrowsWheeler.class" beforeDir="false" afterPath="$PROJECT_DIR$/BurrowsWheeler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BurrowsWheeler.java" beforeDir="false" afterPath="$PROJECT_DIR$/BurrowsWheeler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CircularSuffixArray$CircularSuffix.class" beforeDir="false" afterPath="$PROJECT_DIR$/CircularSuffixArray$CircularSuffix.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CircularSuffixArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/CircularSuffixArray.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CircularSuffixArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/CircularSuffixArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CircularSuffix_MSD$CircularSuffix.class" beforeDir="false" afterPath="$PROJECT_DIR$/CircularSuffix_MSD$CircularSuffix.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CircularSuffix_MSD.class" beforeDir="false" afterPath="$PROJECT_DIR$/CircularSuffix_MSD.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MSD$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/MSD$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MSD.class" beforeDir="false" afterPath="$PROJECT_DIR$/MSD.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MoveToFront.class" beforeDir="false" afterPath="$PROJECT_DIR$/MoveToFront.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoveToFront.java" beforeDir="false" afterPath="$PROJECT_DIR$/MoveToFront.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sandbox.class" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +146,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.BurrowsWheeler">
+  <component name="RunManager" selected="Application.CircularSuffixArray">
     <configuration name="BurrowsWheeler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BurrowsWheeler" />
       <module name="Algorithms, Part II" />
@@ -191,8 +194,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BurrowsWheeler" />
         <item itemvalue="Application.CircularSuffixArray" />
+        <item itemvalue="Application.BurrowsWheeler" />
         <item itemvalue="Application.MSD" />
         <item itemvalue="Application.CircularSuffix_MSD" />
         <item itemvalue="Application.MoveToFront" />
@@ -206,14 +209,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1758825120747</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Need to make sure index[], next[], and t[] populate with the right values.">
-      <option name="closed" value="true" />
-      <created>1759087924460</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1759087924460</updated>
     </task>
     <task id="LOCAL-00012" summary="Need to make sure index[], next[], and t[] populate with the right values.">
       <option name="closed" value="true" />
@@ -599,7 +594,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760816014239</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="made CircularSuffix private">
+      <option name="closed" value="true" />
+      <created>1760820220801</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1760820220801</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TodoView">
@@ -674,7 +677,8 @@
     <MESSAGE value="Saving the latest. Both Transform, and Inverse Transform are working." />
     <MESSAGE value="Added a script for rapid testing and worked on minor bugs in it" />
     <MESSAGE value="Addressed a minor bug with MoveToFront, and ran the script successfully." />
-    <option name="LAST_COMMIT_MESSAGE" value="Addressed a minor bug with MoveToFront, and ran the script successfully." />
+    <MESSAGE value="made CircularSuffix private" />
+    <option name="LAST_COMMIT_MESSAGE" value="made CircularSuffix private" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
