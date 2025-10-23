@@ -40,6 +40,7 @@ public class CircularSuffixArray {
             generalCounter++;
             if (hi > lo)
                 sortMatchingStrings(lo, hi, d);
+
         }
     }
 
