@@ -222,6 +222,14 @@ public class CircularSuffixArray {
     }
 
     public static void main(String[] args) {
+        System.out.println("Processing the current string---------------");
+        String currentString = "BANANA";
+        CircularSuffixArray csaCurrent = new CircularSuffixArray(currentString);
+        System.out.println("            Printing the count frequencies:");
+        // for (int i: countFrequencies) {
+        // System.out.printf("%d ",i);
+        // }
+        System.out.println("Expecting 3, Actual: " + csaCurrent.index(1));
         System.out.println("Processing String 1");
         String shortString = "ABC";
         CircularSuffixArray csaShort = new CircularSuffixArray(shortString);
@@ -241,7 +249,8 @@ public class CircularSuffixArray {
         System.out.println("Processing String 3");
         str = "BANANA";
         circularSuffixArray = new CircularSuffixArray(str);
-        System.out.println(circularSuffixArray.index(0));
+        System.out.println("Expecting 5, Getting: " + circularSuffixArray.index(0));
+        System.out.println("Expecting 3, Getting:" + circularSuffixArray.index(1));
         System.out.println();
         System.out.println("Processing String 4");
         str = "ARD!RCAAAABB";
