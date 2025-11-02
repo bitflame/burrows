@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="Fixed a number of bugs and an error for the staring BANANA. Is sorts fine now.">
-      <change afterPath="$PROJECT_DIR$/4runs.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Small_Test_File.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extended_ascii.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BurrowsWheeler.class" beforeDir="false" afterPath="$PROJECT_DIR$/BurrowsWheeler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BurrowsWheeler.java" beforeDir="false" afterPath="$PROJECT_DIR$/BurrowsWheeler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CircularSuffixArray$CircularSuffix.class" beforeDir="false" afterPath="$PROJECT_DIR$/CircularSuffixArray$CircularSuffix.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CircularSuffixArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/CircularSuffixArray.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CircularSuffixArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/CircularSuffixArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoveToFront.class" beforeDir="false" afterPath="$PROJECT_DIR$/MoveToFront.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoveToFront.java" beforeDir="false" afterPath="$PROJECT_DIR$/MoveToFront.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sandbox.class" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sandbox.java" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aesop.txt" beforeDir="false" />
-    </list>
+    <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="Saving the latest" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -130,29 +114,29 @@
     <option name="sortByType" value="true" />
     <option name="sortKey" value="BY_TYPE" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.BurrowsWheeler.executor": "Run",
-    "Application.CircularSuffixArray.executor": "Debug",
-    "Application.CircularSuffix_MSD.executor": "Debug",
-    "Application.MSD.executor": "Debug",
-    "Application.MoveToFront.executor": "Debug",
-    "Application.Sandbox.executor": "Run",
-    "Attach to process.localhost:5005.executor": "ProcessAttachDebug",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHELLCHECK.PATH": "I do mind",
-    "git-widget-placeholder": "Test",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/firoozyasin/IdeaProjects/burrows",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "two.files.diff.last.used.file": "/home/firoozyasin/coding/java_projects/vscodeprojects/burrows/demo/src/main/java/com/example/CircularSuffixArray.java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.BurrowsWheeler.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CircularSuffixArray.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.CircularSuffix_MSD.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.MSD.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.MoveToFront.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.Sandbox.executor&quot;: &quot;Run&quot;,
+    &quot;Attach to process.localhost:5005.executor&quot;: &quot;ProcessAttachDebug&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHELLCHECK.PATH&quot;: &quot;I do mind&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Test&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/firoozyasin/IdeaProjects/burrows&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;two.files.diff.last.used.file&quot;: &quot;/home/firoozyasin/coding/java_projects/vscodeprojects/burrows/demo/src/main/java/com/example/CircularSuffixArray.java&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -207,12 +191,12 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Sandbox" />
       <item itemvalue="Application.BurrowsWheeler" />
       <item itemvalue="Application.CircularSuffixArray" />
       <item itemvalue="Application.CircularSuffix_MSD" />
       <item itemvalue="Application.MSD" />
       <item itemvalue="Application.MoveToFront" />
+      <item itemvalue="Application.Sandbox" />
     </list>
     <recent_temporary>
       <list>
@@ -231,14 +215,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1758825120747</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Saving what I have before making drastic changes based on new insight.">
-      <option name="closed" value="true" />
-      <created>1759181148847</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1759181148847</updated>
     </task>
     <task id="LOCAL-00015" summary="Saving what I have before making drastic changes based on new insight.">
       <option name="closed" value="true" />
@@ -624,7 +600,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760916481510</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="Saving the latest">
+      <option name="closed" value="true" />
+      <created>1762121557597</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1762121557598</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TodoView">
@@ -682,7 +666,6 @@
     <MESSAGE value="Looks like the decoder is working also." />
     <MESSAGE value="Added a minor fix for strings that start with zero." />
     <MESSAGE value="Stored the characters and the indices in a symbol table. Then just used the iterator to print them in the sorted order of the keys/indices." />
-    <MESSAGE value="Saving the latest" />
     <MESSAGE value="Radix sort works for one column. Need to figure out how many columns I need to do it iteratively. The recursive version does it, but I need to avoid that." />
     <MESSAGE value="Saving the latest. It looks like iterative version of Radix sort that was described in forums is working." />
     <MESSAGE value="Saving the latest. Need to modify the code to check the charAt() for all the strings. A while loop should do it." />
@@ -700,7 +683,8 @@
     <MESSAGE value="made CircularSuffix private" />
     <MESSAGE value="Fixed a number bugs and an error for the staring BANANA. Is sorts fine now." />
     <MESSAGE value="Fixed a number of bugs and an error for the staring BANANA. Is sorts fine now." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed a number of bugs and an error for the staring BANANA. Is sorts fine now." />
+    <MESSAGE value="Saving the latest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Saving the latest" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
