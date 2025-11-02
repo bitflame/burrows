@@ -1,6 +1,7 @@
 import edu.princeton.cs.algs4.BinaryStdIn;
 import edu.princeton.cs.algs4.BinaryStdOut;
 
+
 public class MoveToFront {
     private static final int R = 256;
     private static char[] defaultList;
@@ -12,26 +13,28 @@ public class MoveToFront {
         for (int i = 0; i < R; i++) {
             defaultList[i] = (char) i;
         }
+
         while (!BinaryStdIn.isEmpty()) {
             char currentChar = BinaryStdIn.readChar();
             BinaryStdOut.write(activeStringIndex(currentChar), relevantBits);
             updateActiveStringIndex(currentChar);
         }
+        BinaryStdOut.flush();
         BinaryStdOut.close();
     }
 
-    private static int activeStringIndex(char currentChar) {
+    private static int activeStringIndex(int currentChar) {
         for (int i = 0; i < R; i++) {
             if (defaultList[i] == currentChar) return i;
         }
-        return -1;
+        return 0;
     }
 
     private static void shift(int i, int j) {
         defaultList[j] = defaultList[i];
     }
 
-    private static void updateActiveStringIndex(char currentChar) {
+    private static void updateActiveStringIndex(int currentChar) {
         // find the current index of the character, and move the down stream character to the current location
         int index = activeStringIndex(currentChar);
         if (index > 0 && currentChar > 0) {
@@ -40,7 +43,7 @@ public class MoveToFront {
                 index--;
             } while (index > 0);
         }
-        defaultList[0] = currentChar;
+        defaultList[0] = (char) currentChar;
     }
 
     // apply move-to-front decoding, reading from standard input and writing to standard output
@@ -55,6 +58,7 @@ public class MoveToFront {
             BinaryStdOut.write(defaultList[val]);
             updateActiveStringIndex(defaultList[val]);
         }
+        BinaryStdOut.flush();
         BinaryStdOut.close();
     }
 

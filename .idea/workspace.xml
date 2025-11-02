@@ -5,10 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="Fixed a number of bugs and an error for the staring BANANA. Is sorts fine now.">
+      <change afterPath="$PROJECT_DIR$/4runs.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Small_Test_File.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extended_ascii.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BurrowsWheeler.class" beforeDir="false" afterPath="$PROJECT_DIR$/BurrowsWheeler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BurrowsWheeler.java" beforeDir="false" afterPath="$PROJECT_DIR$/BurrowsWheeler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CircularSuffixArray$CircularSuffix.class" beforeDir="false" afterPath="$PROJECT_DIR$/CircularSuffixArray$CircularSuffix.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CircularSuffixArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/CircularSuffixArray.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CircularSuffixArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/CircularSuffixArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MoveToFront.class" beforeDir="false" afterPath="$PROJECT_DIR$/MoveToFront.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MoveToFront.java" beforeDir="false" afterPath="$PROJECT_DIR$/MoveToFront.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sandbox.class" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sandbox.java" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aesop.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,21 +136,28 @@
     "Application.CircularSuffixArray.executor": "Debug",
     "Application.CircularSuffix_MSD.executor": "Debug",
     "Application.MSD.executor": "Debug",
-    "Application.MoveToFront.executor": "Run",
+    "Application.MoveToFront.executor": "Debug",
+    "Application.Sandbox.executor": "Run",
     "Attach to process.localhost:5005.executor": "ProcessAttachDebug",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "SHELLCHECK.PATH": "I do mind",
     "git-widget-placeholder": "Test",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/firoozyasin/coding/java_projects/vscodeprojects/burrows/demo/src/main/java/com/example/CircularSuffixArray.java",
+    "last_opened_file_path": "/home/firoozyasin/IdeaProjects/burrows",
     "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
     "two.files.diff.last.used.file": "/home/firoozyasin/coding/java_projects/vscodeprojects/burrows/demo/src/main/java/com/example/CircularSuffixArray.java"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.CircularSuffixArray">
     <configuration name="BurrowsWheeler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BurrowsWheeler" />
@@ -172,14 +190,24 @@
     <configuration name="MoveToFront" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MoveToFront" />
       <module name="Algorithms, Part II" />
-      <option name="PROGRAM_PARAMETERS" value="+" />
+      <option name="PROGRAM_PARAMETERS" value="-" />
       <option name="REDIRECT_INPUT" value="true" />
-      <option name="INPUT_FILE" value="abra_decimal.txt" />
+      <option name="INPUT_FILE" value="abra.txt" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Sandbox" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Sandbox" />
+      <module name="Algorithms, Part II" />
+      <option name="REDIRECT_INPUT" value="true" />
+      <option name="INPUT_FILE" value="abra_bin.txt" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Sandbox" />
       <item itemvalue="Application.BurrowsWheeler" />
       <item itemvalue="Application.CircularSuffixArray" />
       <item itemvalue="Application.CircularSuffix_MSD" />
@@ -189,10 +217,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.CircularSuffixArray" />
+        <item itemvalue="Application.MoveToFront" />
         <item itemvalue="Application.BurrowsWheeler" />
         <item itemvalue="Application.MSD" />
         <item itemvalue="Application.CircularSuffix_MSD" />
-        <item itemvalue="Application.MoveToFront" />
       </list>
     </recent_temporary>
   </component>
@@ -684,22 +712,17 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/CircularSuffixArray.java</url>
-          <line>23</line>
+          <line>25</line>
           <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/MoveToFront.java</url>
-          <line>47</line>
-          <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/MoveToFront.java</url>
-          <line>62</line>
+          <line>66</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/BurrowsWheeler.java</url>
-          <line>16</line>
+          <line>15</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -734,13 +757,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/BurrowsWheeler.java</url>
-          <line>66</line>
+          <line>67</line>
           <option name="timeStamp" value="64" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/CircularSuffixArray.java</url>
-          <line>231</line>
-          <option name="timeStamp" value="65" />
+          <line>623</line>
+          <option name="timeStamp" value="66" />
         </line-breakpoint>
         <breakpoint type="java-exception">
           <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
@@ -752,5 +775,10 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="str.charAt(start+i)" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

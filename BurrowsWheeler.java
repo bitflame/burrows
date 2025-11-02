@@ -9,8 +9,7 @@ public class BurrowsWheeler {
     private static int N;
     private static int R = 256;
     private static char[] t;
-    private static int[] count;
-    private static char[] aux;
+
     private static int first;
 
     public static void transform() {
@@ -19,7 +18,7 @@ public class BurrowsWheeler {
         N = str.length();
         t = new char[N];
         for (int i = 0; i < N; i++) {
-            if (circularSuffixArray.index(i) == 0) first = i;
+            if (circularSuffixArray.index(i) == 0) first = (i & 0xff);
         }
         BinaryStdOut.write(first);
         for (int i = 0; i < N; i++) {
@@ -27,6 +26,7 @@ public class BurrowsWheeler {
                 BinaryStdOut.write(str.charAt(circularSuffixArray.index(i) + N - 1));
             else BinaryStdOut.write(str.charAt(circularSuffixArray.index(i) - 1));
         }
+        BinaryStdOut.flush();
         BinaryStdOut.close();
     }
 
@@ -37,7 +37,7 @@ public class BurrowsWheeler {
         String t = BinaryStdIn.readString();
         char[] a = t.toCharArray();
         int N = t.length();
-        char[] aux = new char[N];
+        // char[] aux = new char[N];
         int[] count = new int[R + 1];
 
         for (int i = 0; i < N; i++) {
@@ -48,8 +48,8 @@ public class BurrowsWheeler {
         }
         int[] next = new int[N];
         for (int i = 0; i < N; i++) {
-            aux[count[a[i]]++] = a[i];
-            next[count[a[i]] - 1] = i;
+            // aux[count[a[i]]++] = a[i];
+            next[count[a[i]]++] = i;
         }
 
         for (int j = 0; j < next.length; j++) {
@@ -58,6 +58,7 @@ public class BurrowsWheeler {
             BinaryStdOut.write(t.charAt(first));
         }
         // System.out.println();
+        BinaryStdOut.flush();
         BinaryStdOut.close();
     }
 
