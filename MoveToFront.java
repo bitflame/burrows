@@ -1,93 +1,69 @@
-/* *****************************************************************************
- *  Name: Shahin M. Ansari
- *  Date: 09-26-25
- *  Description: Burrows-Wheeler encoding implementation
- **************************************************************************** */
-
 import edu.princeton.cs.algs4.BinaryStdIn;
 import edu.princeton.cs.algs4.BinaryStdOut;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public class MoveToFront {
     private static final int R = 256;
     private static char[] defaultList;
-    private static char[] activeString;
-    private static boolean[] isActive;
-    private static List<Character> stringChars;
-    static int relevantBits = 8;
+    private static int relevantBits = 8;
 
     // apply move-to-front encoding, reading from standard input and writing to standard output
     public static void encode() {
         defaultList = new char[R];
-        activeString = new char[R];
-        stringChars = new ArrayList<>();
-        isActive = new boolean[256];
         for (int i = 0; i < R; i++) {
             defaultList[i] = (char) i;
         }
-        // System.out.println("Encoding. Here is what is in the array before endoding.");
-        // printString();
-        int count = 0, uniqueCharCount = 0;
+
         while (!BinaryStdIn.isEmpty()) {
-            count++;
             char currentChar = BinaryStdIn.readChar();
-            if (isActive[currentChar]) {
-                // find characters current index and then move the character to the front
-                // BinaryStdOut.write(activeStringIndex(count, currentChar), relevantBits);
-                BinaryStdOut.write(activeStringIndex(count, currentChar));
-                updateActiveStringIndex(uniqueCharCount, currentChar);
-            }
-            else {
-                // since ascii value of the character is the default index of it...
-                uniqueCharCount++;
-                BinaryStdOut.write(currentChar);
-                isActive[currentChar] = true;
-                updateActiveStringIndex(uniqueCharCount, currentChar);
-                // Just in case the exact string is needed later
-                stringChars.add(currentChar);
-            }
+            BinaryStdOut.write(activeStringIndex(currentChar), relevantBits);
+            updateActiveStringIndex(currentChar);
         }
-        // System.out.println("Here is what is in the array after the string is entered.");
-        // printString();
-        // for (int i = 0; i < count; i++) BinaryStdOut.write(defaultList[i]);
+        BinaryStdOut.flush();
         BinaryStdOut.close();
     }
 
-    private static int activeStringIndex(int uniqueCharCount, char currentChar) {
-        for (int i = 0; i < uniqueCharCount; i++) {
-            if (activeString[i] == currentChar) return i;
+    private static int activeStringIndex(int currentChar) {
+        for (int i = 0; i < R; i++) {
+            if (defaultList[i] == currentChar) return i;
         }
-        return -1;
+        return 0;
     }
 
-    private static void updateActiveStringIndex(int uniqueCharCount, char currentChar) {
-        int index;
-        for (int i = uniqueCharCount; i > 0; i--) {
-            if (activeString[i - 1] == currentChar) {
-                index = i - 1;
-                while (index <= uniqueCharCount) {
-                    activeString[index] = activeString[++index];
-                }
-                i--;
-            }
-            activeString[i] = activeString[i - 1];
+    private static void shift(int i, int j) {
+        defaultList[j] = defaultList[i];
+    }
+
+    private static void updateActiveStringIndex(int currentChar) {
+        // find the current index of the character, and move the down stream character to the current location
+        int index = activeStringIndex(currentChar);
+        if (index > 0 && currentChar > 0) {
+            do {
+                shift(index - 1, index);
+                index--;
+            } while (index > 0);
         }
-        activeString[0] = currentChar;
+        defaultList[0] = (char) currentChar;
     }
 
     // apply move-to-front decoding, reading from standard input and writing to standard output
     public static void decode() {
-        System.out.println("Decoding.");
-
+        // System.out.println("Decoding.");
+        defaultList = new char[R];
+        for (int i = 0; i < R; i++) {
+            defaultList[i] = (char) i;
+        }
+        while (!BinaryStdIn.isEmpty()) {
+            int val = BinaryStdIn.readChar();
+            BinaryStdOut.write(defaultList[val]);
+            updateActiveStringIndex(defaultList[val]);
+        }
+        BinaryStdOut.flush();
+        BinaryStdOut.close();
     }
 
-    // if args[0] is "-", apply move-to-front encoding
-    // if args[0] is "+", apply move-to-front decoding
     public static void main(String[] args) {
         if (args[0].equals("-")) encode();
         if (args[0].equals("+")) decode();
-        // encode();
     }
 }

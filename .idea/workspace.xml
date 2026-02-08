@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="Need to make sure index[], next[], and t[] populate with the right values.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CircularSuffixArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/CircularSuffixArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoveToFront.class" beforeDir="false" afterPath="$PROJECT_DIR$/MoveToFront.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MoveToFront.java" beforeDir="false" afterPath="$PROJECT_DIR$/MoveToFront.java" afterDir="false" />
-    </list>
+    <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="Saving the latest" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,6 +37,11 @@
     <option name="myRunOnSave" value="true" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
     <option name="UPDATE_TYPE" value="REBASE" />
@@ -56,6 +56,16 @@
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/bitflame/burrows.git&quot;,
     &quot;accountId&quot;: &quot;4c3cf077-02df-452e-ac8a-0b659d034667&quot;
+  },
+  &quot;recentNewPullRequestHead&quot;: {
+    &quot;server&quot;: {
+      &quot;useHttp&quot;: false,
+      &quot;host&quot;: &quot;github.com&quot;,
+      &quot;port&quot;: null,
+      &quot;suffix&quot;: null
+    },
+    &quot;owner&quot;: &quot;bitflame&quot;,
+    &quot;repository&quot;: &quot;burrows&quot;
   }
 }</component>
   <component name="OptimizeOnSaveOptions">
@@ -104,23 +114,58 @@
     <option name="sortByType" value="true" />
     <option name="sortKey" value="BY_TYPE" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.CircularSuffixArray.executor": "Debug",
-    "Application.MoveToFront.executor": "Run",
-    "Attach to process.localhost:5005.executor": "ProcessAttachDebug",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/firoozyasin/IdeaProjects/burrows"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.BurrowsWheeler.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CircularSuffixArray.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.CircularSuffix_MSD.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.MSD.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.MoveToFront.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.Sandbox.executor&quot;: &quot;Run&quot;,
+    &quot;Attach to process.localhost:5005.executor&quot;: &quot;ProcessAttachDebug&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHELLCHECK.PATH&quot;: &quot;I do mind&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Test&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/firoozyasin/IdeaProjects/burrows&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;two.files.diff.last.used.file&quot;: &quot;/home/firoozyasin/coding/java_projects/vscodeprojects/burrows/demo/src/main/java/com/example/CircularSuffixArray.java&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.MoveToFront">
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.CircularSuffixArray">
+    <configuration name="BurrowsWheeler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BurrowsWheeler" />
+      <module name="Algorithms, Part II" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CircularSuffixArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CircularSuffixArray" />
+      <module name="Algorithms, Part II" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CircularSuffix_MSD" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CircularSuffix_MSD" />
+      <module name="Algorithms, Part II" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MSD" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MSD" />
       <module name="Algorithms, Part II" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -129,14 +174,37 @@
     <configuration name="MoveToFront" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MoveToFront" />
       <module name="Algorithms, Part II" />
+      <option name="PROGRAM_PARAMETERS" value="-" />
+      <option name="REDIRECT_INPUT" value="true" />
+      <option name="INPUT_FILE" value="abra.txt" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Sandbox" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Sandbox" />
+      <module name="Algorithms, Part II" />
+      <option name="REDIRECT_INPUT" value="true" />
+      <option name="INPUT_FILE" value="abra_bin.txt" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.BurrowsWheeler" />
+      <item itemvalue="Application.CircularSuffixArray" />
+      <item itemvalue="Application.CircularSuffix_MSD" />
+      <item itemvalue="Application.MSD" />
+      <item itemvalue="Application.MoveToFront" />
+      <item itemvalue="Application.Sandbox" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MoveToFront" />
         <item itemvalue="Application.CircularSuffixArray" />
+        <item itemvalue="Application.MoveToFront" />
+        <item itemvalue="Application.BurrowsWheeler" />
+        <item itemvalue="Application.MSD" />
+        <item itemvalue="Application.CircularSuffix_MSD" />
       </list>
     </recent_temporary>
   </component>
@@ -148,111 +216,399 @@
       <option name="presentableId" value="Default" />
       <updated>1758825120747</updated>
     </task>
-    <task id="LOCAL-00001" summary="Saving the latest">
+    <task id="LOCAL-00015" summary="Saving what I have before making drastic changes based on new insight.">
       <option name="closed" value="true" />
-      <created>1758908790754</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
+      <created>1759181469996</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
       <option name="project" value="LOCAL" />
-      <updated>1758908790754</updated>
+      <updated>1759181469996</updated>
     </task>
-    <task id="LOCAL-00002" summary="Saving the latest">
+    <task id="LOCAL-00016" summary="Saving the latest changes">
       <option name="closed" value="true" />
-      <created>1758908901594</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
+      <created>1759181760674</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
       <option name="project" value="LOCAL" />
-      <updated>1758908901594</updated>
+      <updated>1759181760674</updated>
     </task>
-    <task id="LOCAL-00003" summary="Saving the latest">
+    <task id="LOCAL-00017" summary="Saving the latest changes">
       <option name="closed" value="true" />
-      <created>1758928327067</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
+      <created>1759182245034</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
       <option name="project" value="LOCAL" />
-      <updated>1758928327067</updated>
+      <updated>1759182245034</updated>
     </task>
-    <task id="LOCAL-00004" summary="Saving the latest">
+    <task id="LOCAL-00018" summary="Saving the latest changes">
       <option name="closed" value="true" />
-      <created>1758982375726</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
+      <created>1759182756173</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
       <option name="project" value="LOCAL" />
-      <updated>1758982375726</updated>
+      <updated>1759182756173</updated>
     </task>
-    <task id="LOCAL-00005" summary="Saving the latest">
+    <task id="LOCAL-00019" summary="Saving the latest changes">
       <option name="closed" value="true" />
-      <created>1758996359925</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
+      <created>1759184878981</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
       <option name="project" value="LOCAL" />
-      <updated>1758996359925</updated>
+      <updated>1759184878981</updated>
     </task>
-    <task id="LOCAL-00006" summary="Saving the latest">
+    <task id="LOCAL-00020" summary="Saving the latest changes">
       <option name="closed" value="true" />
-      <created>1758999456787</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
+      <created>1759185335867</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
       <option name="project" value="LOCAL" />
-      <updated>1758999456787</updated>
+      <updated>1759185335868</updated>
     </task>
-    <task id="LOCAL-00007" summary="Saving the latest">
+    <task id="LOCAL-00021" summary="Saving the latest changes">
       <option name="closed" value="true" />
-      <created>1759003730467</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
+      <created>1759186560224</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
       <option name="project" value="LOCAL" />
-      <updated>1759003730468</updated>
+      <updated>1759186560224</updated>
     </task>
-    <task id="LOCAL-00008" summary="Saving the latest. Circular suffix seems to be working.">
+    <task id="LOCAL-00022" summary="Saving the latest changes">
       <option name="closed" value="true" />
-      <created>1759075186691</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
+      <created>1759187969852</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
       <option name="project" value="LOCAL" />
-      <updated>1759075186691</updated>
+      <updated>1759187969852</updated>
     </task>
-    <task id="LOCAL-00009" summary="Saving the latest.">
+    <task id="LOCAL-00023" summary="cleaned up the extra data structures">
       <option name="closed" value="true" />
-      <created>1759075900557</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
+      <created>1759254707290</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
       <option name="project" value="LOCAL" />
-      <updated>1759075900557</updated>
+      <updated>1759254707290</updated>
     </task>
-    <task id="LOCAL-00010" summary="Saving the latest.">
+    <task id="LOCAL-00024" summary="working on decoding.">
       <option name="closed" value="true" />
-      <created>1759076010171</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
+      <created>1759271267624</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
       <option name="project" value="LOCAL" />
-      <updated>1759076010171</updated>
+      <updated>1759271267624</updated>
     </task>
-    <task id="LOCAL-00011" summary="Need to make sure index[], next[], and t[] populate with the right values.">
+    <task id="LOCAL-00025" summary="Looks like the decoder is working also.">
       <option name="closed" value="true" />
-      <created>1759087924460</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
+      <created>1759271993862</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
       <option name="project" value="LOCAL" />
-      <updated>1759087924460</updated>
+      <updated>1759271993862</updated>
     </task>
-    <task id="LOCAL-00012" summary="Need to make sure index[], next[], and t[] populate with the right values.">
+    <task id="LOCAL-00026" summary="Added a minor fix for strings that start with zero.">
       <option name="closed" value="true" />
-      <created>1759092671820</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
+      <created>1759272718443</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
       <option name="project" value="LOCAL" />
-      <updated>1759092671820</updated>
+      <updated>1759272718443</updated>
     </task>
-    <task id="LOCAL-00013" summary="Need to make sure index[], next[], and t[] populate with the right values.">
+    <task id="LOCAL-00027" summary="Stored the characters and the indices in a symbol table. Then just used the iterator to print them in the sorted order of the keys/indices.">
       <option name="closed" value="true" />
-      <created>1759101437197</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
+      <created>1759334091957</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
       <option name="project" value="LOCAL" />
-      <updated>1759101437197</updated>
+      <updated>1759334091957</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00028" summary="Saving the latest">
+      <option name="closed" value="true" />
+      <created>1759336991893</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1759336991893</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Saving the latest.">
+      <option name="closed" value="true" />
+      <created>1759358025858</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1759358025858</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Saving the latest.">
+      <option name="closed" value="true" />
+      <created>1759359320587</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1759359320587</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Saving the latest.">
+      <option name="closed" value="true" />
+      <created>1759437514816</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1759437514816</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Saving the latest.">
+      <option name="closed" value="true" />
+      <created>1759438720546</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1759438720546</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Saving the latest.">
+      <option name="closed" value="true" />
+      <created>1759440123511</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1759440123511</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Radix sort works for one column. Need to figure out how many columns I need to do it iteratively. The recursive version does it, but I need to avoid that.">
+      <option name="closed" value="true" />
+      <created>1759441833739</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1759441833739</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Saving the latest.">
+      <option name="closed" value="true" />
+      <created>1759443344867</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1759443344867</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Saving the latest.">
+      <option name="closed" value="true" />
+      <created>1759444676968</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1759444676968</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Saving the latest.">
+      <option name="closed" value="true" />
+      <created>1759514094804</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1759514094804</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Saving the latest.">
+      <option name="closed" value="true" />
+      <created>1759606093370</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1759606093370</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Saving the latest.">
+      <option name="closed" value="true" />
+      <created>1759610245609</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1759610245609</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Saving the latest. It looks like iterative version of Radix sort that was described in forums is working.">
+      <option name="closed" value="true" />
+      <created>1759612337745</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1759612337745</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Saving the latest. Need to modify the code to check the charAt() for all the strings. A while loop should do it.">
+      <option name="closed" value="true" />
+      <created>1759620163433</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1759620163433</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Found the cause of sorting issue, which was skipping the suggestion of cuting over to insertion sort. Implmented and tested the insertion sort code provided by this amazing professor.">
+      <option name="closed" value="true" />
+      <created>1759864582905</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1759864582905</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Added a modification to insertion sort that checks every character in each string to determine which is lexicographically lower, and sort the strings accordingly. It seems to be working.">
+      <option name="closed" value="true" />
+      <created>1759874905330</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1759874905330</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Added a modification to insertion sort that checks every character in each string to determine which is lexicographically lower, and sort the strings accordingly. It seems to be working. But downstream characters are not sorted yet.">
+      <option name="closed" value="true" />
+      <created>1759932003932</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1759932003932</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Added a modification to insertion sort that checks every character in each string to determine which is lexicographically lower, and sort the strings accordingly. It seems to be working. But downstream characters are not sorted yet.">
+      <option name="closed" value="true" />
+      <created>1759935620298</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1759935620298</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Saving the latest.">
+      <option name="closed" value="true" />
+      <created>1759938626047</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1759938626047</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Saving the latest.">
+      <option name="closed" value="true" />
+      <created>1759941662320</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1759941662320</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Changed the MSD implementation to see if I get the same recursive calls that are on page 714, and I do.">
+      <option name="closed" value="true" />
+      <created>1760390330752</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1760390330752</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Moved the latest CircularSuffixArray implementation, but need to update it to have the methods stated in the specification.">
+      <option name="closed" value="true" />
+      <created>1760553633974</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1760553633974</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Moved the latest CircularSuffixArray implementation, but need to update it to have the methods stated in the specification.">
+      <option name="closed" value="true" />
+      <created>1760553934617</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1760553934617</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Saving a minor update.">
+      <option name="closed" value="true" />
+      <created>1760554159049</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1760554159049</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Saving a minor update.">
+      <option name="closed" value="true" />
+      <created>1760554237499</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1760554237499</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Saving the latest.">
+      <option name="closed" value="true" />
+      <created>1760566932409</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1760566932409</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Saving the latest.">
+      <option name="closed" value="true" />
+      <created>1760631236498</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1760631236499</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Saving the latest. Inverse Transform is working.">
+      <option name="closed" value="true" />
+      <created>1760738235527</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1760738235527</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Saving the latest. Both Transform, and Inverse Transform are working.">
+      <option name="closed" value="true" />
+      <created>1760802750234</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1760802750235</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Saving the latest. Both Transform, and Inverse Transform are working.">
+      <option name="closed" value="true" />
+      <created>1760803914182</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1760803914182</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Added a script for rapid testing and worked on minor bugs in it">
+      <option name="closed" value="true" />
+      <created>1760812678574</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1760812678574</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Addressed a minor bug with MoveToFront, and ran the script successfully.">
+      <option name="closed" value="true" />
+      <created>1760816014238</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1760816014239</updated>
+    </task>
+    <task id="LOCAL-00060" summary="made CircularSuffix private">
+      <option name="closed" value="true" />
+      <created>1760820220801</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1760820220801</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Fixed a number bugs and an error for the staring BANANA. Is sorts fine now.">
+      <option name="closed" value="true" />
+      <created>1760910271877</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1760910271877</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Fixed a number of bugs and an error for the staring BANANA. Is sorts fine now.">
+      <option name="closed" value="true" />
+      <created>1760916481509</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1760916481510</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Saving the latest">
+      <option name="closed" value="true" />
+      <created>1762121557597</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1762121557598</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TodoView">
@@ -303,31 +659,110 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Saving the latest" />
-    <MESSAGE value="Saving the latest. Circular suffix seems to be working." />
+    <MESSAGE value="Saving what I have before making drastic changes based on new insight." />
+    <MESSAGE value="Saving the latest changes" />
+    <MESSAGE value="cleaned up the extra data structures" />
+    <MESSAGE value="working on decoding." />
+    <MESSAGE value="Looks like the decoder is working also." />
+    <MESSAGE value="Added a minor fix for strings that start with zero." />
+    <MESSAGE value="Stored the characters and the indices in a symbol table. Then just used the iterator to print them in the sorted order of the keys/indices." />
+    <MESSAGE value="Radix sort works for one column. Need to figure out how many columns I need to do it iteratively. The recursive version does it, but I need to avoid that." />
+    <MESSAGE value="Saving the latest. It looks like iterative version of Radix sort that was described in forums is working." />
+    <MESSAGE value="Saving the latest. Need to modify the code to check the charAt() for all the strings. A while loop should do it." />
+    <MESSAGE value="Found the cause of sorting issue, which was skipping the suggestion of cuting over to insertion sort. Implmented and tested the insertion sort code provided by this amazing professor." />
+    <MESSAGE value="Added a modification to insertion sort that checks every character in each string to determine which is lexicographically lower, and sort the strings accordingly. It seems to be working." />
+    <MESSAGE value="Added a modification to insertion sort that checks every character in each string to determine which is lexicographically lower, and sort the strings accordingly. It seems to be working. But downstream characters are not sorted yet." />
+    <MESSAGE value="Changed the MSD implementation to see if I get the same recursive calls that are on page 714, and I do." />
+    <MESSAGE value="Moved the latest CircularSuffixArray implementation, but need to update it to have the methods stated in the specification." />
+    <MESSAGE value="Saving a minor update." />
     <MESSAGE value="Saving the latest." />
-    <MESSAGE value="Need to make sure index[], next[], and t[] populate with the right values." />
-    <option name="LAST_COMMIT_MESSAGE" value="Need to make sure index[], next[], and t[] populate with the right values." />
+    <MESSAGE value="Saving the latest. Inverse Transform is working." />
+    <MESSAGE value="Saving the latest. Both Transform, and Inverse Transform are working." />
+    <MESSAGE value="Added a script for rapid testing and worked on minor bugs in it" />
+    <MESSAGE value="Addressed a minor bug with MoveToFront, and ran the script successfully." />
+    <MESSAGE value="made CircularSuffix private" />
+    <MESSAGE value="Fixed a number bugs and an error for the staring BANANA. Is sorts fine now." />
+    <MESSAGE value="Fixed a number of bugs and an error for the staring BANANA. Is sorts fine now." />
+    <MESSAGE value="Saving the latest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Saving the latest" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/MoveToFront.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/CircularSuffixArray.java</url>
-          <line>35</line>
+          <line>27</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/CircularSuffixArray.java</url>
-          <line>27</line>
+          <line>25</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/MoveToFront.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/BurrowsWheeler.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/CircularSuffix_MSD.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/MSD.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/MSD.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/MSD.java</url>
+          <line>115</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/MSD.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/MSD.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/BurrowsWheeler.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/CircularSuffixArray.java</url>
+          <line>623</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <breakpoint type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="9" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.util.NoSuchElementException" package="java.util" />
+          <option name="timeStamp" value="15" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="str.charAt(start+i)" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
